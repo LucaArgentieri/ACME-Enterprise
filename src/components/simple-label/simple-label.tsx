@@ -9,7 +9,7 @@ export class SimpleLabel implements ComponentInterface {
 
   render() {
     return (
-      <label class='simple-label'>simple label</label>
+      <label class='simple-label'>simpleeee label</label>
     );
   }
 

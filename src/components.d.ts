@@ -6,32 +6,58 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface SimpleLabel {
+    interface BodyBox {
+    }
+    interface BodyBox2 {
+    }
+    interface TextBox {
     }
 }
 declare global {
-    interface HTMLSimpleLabelElement extends Components.SimpleLabel, HTMLStencilElement {
+    interface HTMLBodyBoxElement extends Components.BodyBox, HTMLStencilElement {
     }
-    var HTMLSimpleLabelElement: {
-        prototype: HTMLSimpleLabelElement;
-        new (): HTMLSimpleLabelElement;
+    var HTMLBodyBoxElement: {
+        prototype: HTMLBodyBoxElement;
+        new (): HTMLBodyBoxElement;
+    };
+    interface HTMLBodyBox2Element extends Components.BodyBox2, HTMLStencilElement {
+    }
+    var HTMLBodyBox2Element: {
+        prototype: HTMLBodyBox2Element;
+        new (): HTMLBodyBox2Element;
+    };
+    interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
+    }
+    var HTMLTextBoxElement: {
+        prototype: HTMLTextBoxElement;
+        new (): HTMLTextBoxElement;
     };
     interface HTMLElementTagNameMap {
-        "simple-label": HTMLSimpleLabelElement;
+        "body-box": HTMLBodyBoxElement;
+        "body-box2": HTMLBodyBox2Element;
+        "text-box": HTMLTextBoxElement;
     }
 }
 declare namespace LocalJSX {
-    interface SimpleLabel {
+    interface BodyBox {
+    }
+    interface BodyBox2 {
+    }
+    interface TextBox {
     }
     interface IntrinsicElements {
-        "simple-label": SimpleLabel;
+        "body-box": BodyBox;
+        "body-box2": BodyBox2;
+        "text-box": TextBox;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "simple-label": LocalJSX.SimpleLabel & JSXBase.HTMLAttributes<HTMLSimpleLabelElement>;
+            "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
+            "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
+            "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
         }
     }
 }

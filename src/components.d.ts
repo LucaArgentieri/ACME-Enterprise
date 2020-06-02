@@ -10,6 +10,8 @@ export namespace Components {
     }
     interface BodyBox2 {
     }
+    interface BodyContainer {
+    }
     interface TextBox {
     }
 }
@@ -26,6 +28,12 @@ declare global {
         prototype: HTMLBodyBox2Element;
         new (): HTMLBodyBox2Element;
     };
+    interface HTMLBodyContainerElement extends Components.BodyContainer, HTMLStencilElement {
+    }
+    var HTMLBodyContainerElement: {
+        prototype: HTMLBodyContainerElement;
+        new (): HTMLBodyContainerElement;
+    };
     interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
     }
     var HTMLTextBoxElement: {
@@ -35,6 +43,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
+        "body-container": HTMLBodyContainerElement;
         "text-box": HTMLTextBoxElement;
     }
 }
@@ -43,11 +52,14 @@ declare namespace LocalJSX {
     }
     interface BodyBox2 {
     }
+    interface BodyContainer {
+    }
     interface TextBox {
     }
     interface IntrinsicElements {
         "body-box": BodyBox;
         "body-box2": BodyBox2;
+        "body-container": BodyContainer;
         "text-box": TextBox;
     }
 }
@@ -57,6 +69,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
+            "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
         }
     }

@@ -1,4 +1,4 @@
-# text-box
+# body-container
 
 
 
@@ -7,15 +7,18 @@
 
 ## Dependencies
 
-### Used by
+### Depends on
 
- - [body-container](../body-container)
+- [text-box](../text-box)
+- [body-box](../body-box)
 
 ### Graph
 ```mermaid
 graph TD;
   body-container --> text-box
-  style text-box fill:#f9f,stroke:#333,stroke-width:4px
+  body-container --> body-box
+  body-box --> body-box2
+  style body-container fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

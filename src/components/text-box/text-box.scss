@@ -42,6 +42,19 @@ a {
   width: 200px;
   margin-bottom: 50px;
 }
+
+@media(max-width:1200px){
+  .left-box {
+    margin-left: 0px;
+    width: auto;
+  }
+  .right-box {
+    margin-left: 0px;
+    width: auto;
+    margin-top: 50px;
+  }
+}
+
 @media(max-width:900px){
   .left-box {
     margin-left: 0px;

@@ -12,8 +12,6 @@ export namespace Components {
     }
     interface BodyContainer {
     }
-    interface SimpleLabel {
-    }
     interface TextBox {
     }
 }
@@ -36,12 +34,6 @@ declare global {
         prototype: HTMLBodyContainerElement;
         new (): HTMLBodyContainerElement;
     };
-    interface HTMLSimpleLabelElement extends Components.SimpleLabel, HTMLStencilElement {
-    }
-    var HTMLSimpleLabelElement: {
-        prototype: HTMLSimpleLabelElement;
-        new (): HTMLSimpleLabelElement;
-    };
     interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
     }
     var HTMLTextBoxElement: {
@@ -52,7 +44,6 @@ declare global {
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
-        "simple-label": HTMLSimpleLabelElement;
         "text-box": HTMLTextBoxElement;
     }
 }
@@ -63,15 +54,12 @@ declare namespace LocalJSX {
     }
     interface BodyContainer {
     }
-    interface SimpleLabel {
-    }
     interface TextBox {
     }
     interface IntrinsicElements {
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
-        "simple-label": SimpleLabel;
         "text-box": TextBox;
     }
 }
@@ -82,7 +70,6 @@ declare module "@stencil/core" {
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
-            "simple-label": LocalJSX.SimpleLabel & JSXBase.HTMLAttributes<HTMLSimpleLabelElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
         }
     }

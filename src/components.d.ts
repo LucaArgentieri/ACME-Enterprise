@@ -6,10 +6,18 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface BodyContainer {
+    }
     interface SimpleLabel {
     }
 }
 declare global {
+    interface HTMLBodyContainerElement extends Components.BodyContainer, HTMLStencilElement {
+    }
+    var HTMLBodyContainerElement: {
+        prototype: HTMLBodyContainerElement;
+        new (): HTMLBodyContainerElement;
+    };
     interface HTMLSimpleLabelElement extends Components.SimpleLabel, HTMLStencilElement {
     }
     var HTMLSimpleLabelElement: {
@@ -17,13 +25,17 @@ declare global {
         new (): HTMLSimpleLabelElement;
     };
     interface HTMLElementTagNameMap {
+        "body-container": HTMLBodyContainerElement;
         "simple-label": HTMLSimpleLabelElement;
     }
 }
 declare namespace LocalJSX {
+    interface BodyContainer {
+    }
     interface SimpleLabel {
     }
     interface IntrinsicElements {
+        "body-container": BodyContainer;
         "simple-label": SimpleLabel;
     }
 }
@@ -31,6 +43,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
             "simple-label": LocalJSX.SimpleLabel & JSXBase.HTMLAttributes<HTMLSimpleLabelElement>;
         }
     }

@@ -38,7 +38,7 @@
     h5 {
       color: $secondary-color;
       cursor: pointer;
-      
+
       &:hover{
         opacity: .8;
       }
@@ -48,10 +48,12 @@
       cursor: pointer;
       font-size: 13px;
       list-style: none;
+      transition: all .4s;
 
       &:hover {
-        opacity: .6;
-        text-decoration: underline;
+        opacity: .8;
+        transform: translateY(-1px);
+        color: $secondary-color;
       }
     }
    }

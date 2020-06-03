@@ -12,13 +12,15 @@ export class AcmeFooter implements ComponentInterface {
     return (
       <footer class="footer">
         <div class="footer__section footer__section--icons">
-          <div>
+          <div class="logo-acme">
             <img src="assets/logo.svg" alt="logo acme" />
           </div>
 
-          <img src="assets/facebook.svg" alt="logo facebook" />
-          <img src="assets/twitter.svg" alt="logo twitter" />
-          <img src="assets/linkedin.svg" alt="linkedin" />
+          <div>
+            <img src="assets/facebook.svg" alt="logo facebook" />
+            <img src="assets/twitter.svg" alt="logo twitter" />
+            <img src="assets/linkedin.svg" alt="linkedin" />
+          </div>
         </div>
 
         <div class="footer__section">

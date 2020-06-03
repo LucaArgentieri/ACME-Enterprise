@@ -7,17 +7,18 @@ import { Component, ComponentInterface, h } from '@stencil/core';
 })
 export class AcmeFooter implements ComponentInterface {
 
+
   render() {
     return (
       <footer class="footer">
-        <div class="footer__section footer__section--white">
-          <div class="content-logo">
-            <h5>Logo acme</h5>
+        <div class="footer__section footer__section--icons">
+          <div>
+            <img src="assets/logo.svg" alt="logo acme" />
           </div>
 
-          <h5>Logo instagram</h5>
-          <h5>Logo fb</h5>
-          <h5>Logo linkedin</h5>
+          <img src="assets/facebook.svg" alt="logo facebook" />
+          <img src="assets/twitter.svg" alt="logo twitter" />
+          <img src="assets/linkedin.svg" alt="linkedin" />
         </div>
 
         <div class="footer__section">
@@ -45,7 +46,7 @@ export class AcmeFooter implements ComponentInterface {
         <div class="footer__section">
           <h5>Contatti</h5>
           <ul>
-            <li>800 600 500</li>
+            <li>Telefono: 800 600 500</li>
             <li>@acme.help.it</li>
             <li>Area clienti</li>
           </ul>

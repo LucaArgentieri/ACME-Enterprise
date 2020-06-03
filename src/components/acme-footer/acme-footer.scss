@@ -1,4 +1,4 @@
-.footer{
+.footer{ 
   font-family: $font-primary;
   margin-top: 40px;
    background-color: $primary-color;
@@ -14,12 +14,18 @@
    &__section {
     padding-top: 20px;
     padding-bottom: 20px;
+
+    &--icon {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr ;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
    }
    
-   .content-logo{
-     background-color: #ffffff;
-   }
-
    h5 {
      color: $secondary-color;
    }
@@ -28,10 +34,12 @@
     font-size: 13px;
     list-style: none;
   }
+
+  @media(max-width:900px){
+    grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+  }
 }
-
-
-
 
 
 

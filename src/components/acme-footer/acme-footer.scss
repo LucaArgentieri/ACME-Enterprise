@@ -1,0 +1,37 @@
+.footer{
+  font-family: $font-primary;
+  margin-top: 40px;
+   background-color: $primary-color;
+   text-align: center;
+   width: 100%;
+   padding: 10px;
+   display: grid;
+   grid-template-rows: 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-gap: 10px;
+   color: white;
+
+   &__section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+   }
+   
+   .content-logo{
+     background-color: #ffffff;
+   }
+
+   h5 {
+     color: $secondary-color;
+   }
+
+   li {
+    font-size: 13px;
+    list-style: none;
+  }
+}
+
+
+
+
+
+

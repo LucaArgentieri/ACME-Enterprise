@@ -6,6 +6,8 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AcmeFooter {
+    }
     interface BodyBox {
     }
     interface BodyBox2 {
@@ -16,6 +18,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLAcmeFooterElement extends Components.AcmeFooter, HTMLStencilElement {
+    }
+    var HTMLAcmeFooterElement: {
+        prototype: HTMLAcmeFooterElement;
+        new (): HTMLAcmeFooterElement;
+    };
     interface HTMLBodyBoxElement extends Components.BodyBox, HTMLStencilElement {
     }
     var HTMLBodyBoxElement: {
@@ -41,6 +49,7 @@ declare global {
         new (): HTMLTextBoxElement;
     };
     interface HTMLElementTagNameMap {
+        "acme-footer": HTMLAcmeFooterElement;
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
@@ -48,6 +57,8 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface AcmeFooter {
+    }
     interface BodyBox {
     }
     interface BodyBox2 {
@@ -57,6 +68,7 @@ declare namespace LocalJSX {
     interface TextBox {
     }
     interface IntrinsicElements {
+        "acme-footer": AcmeFooter;
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
@@ -67,6 +79,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "acme-footer": LocalJSX.AcmeFooter & JSXBase.HTMLAttributes<HTMLAcmeFooterElement>;
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;

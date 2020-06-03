@@ -12,6 +12,7 @@ export class BodyContainer implements ComponentInterface {
       <div>
         <text-box></text-box>
         <body-box></body-box>
+        <body-box2></body-box2>
       </div>
     );
   }

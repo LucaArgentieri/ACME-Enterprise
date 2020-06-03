@@ -1,53 +1,64 @@
 .footer{ 
   font-family: $font-primary;
   margin-top: 40px;
-   background-color: $primary-color;
    text-align: center;
    width: 100%;
-   padding: 10px;
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
-   grid-gap: 10px;
-   color: white;
+   grid-gap: 5px;
+  
+   background-color: #fff;
+   color: $color-text;
 
    &__section {
     padding-top: 20px;
     padding-bottom: 20px;
 
     &--icons {
+     
       .logo-acme {
-        //background-color: #fff;
-        margin-left: 60px;
+        margin-left: 25px;
 
-        img {
-          width: 100px;
-          height: 100px;
+        img {        
+          width: 100%;
+          height: 50px;
         }
       }
     }
-    img {
+    .cont-social {
+      padding-top: 20px;
+      img { 
+        width: 40px;
+        height: auto;
+        padding: 8px;
+      }
+    }
+
+    h5 {
+      color: $secondary-color;
+      cursor: pointer;
       
-      width: 30px;
-      height: 30px;
-      padding: 5px;
+      &:hover{
+        opacity: .8;
+      }
+    }
+     
+    li {
+      cursor: pointer;
+      font-size: 13px;
+      list-style: none;
+
+      &:hover {
+        opacity: .6;
+        text-decoration: underline;
+      }
     }
    }
    
-   h5 {
-     color: $secondary-color;
-   }
-
-   li {
-    font-size: 13px;
-    list-style: none;
-  }
-
   @media(max-width:900px){
-    grid-template-rows: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr;
   }
 }
-
-
 

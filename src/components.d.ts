@@ -6,32 +6,95 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface SimpleLabel {
+    interface AcmeBanner {
+    }
+    interface AcmeNavbar {
+        "contacts": string;
+        "phone": string;
+        "products": string;
+        "services": string;
+        "tagline": string;
+        "who": string;
+    }
+    interface LowerBar {
+        "contacts": string;
+        "products": string;
+        "services": string;
+        "who": string;
+    }
+    interface UpperBar {
+        "phone": string;
+        "tagline": string;
     }
 }
 declare global {
-    interface HTMLSimpleLabelElement extends Components.SimpleLabel, HTMLStencilElement {
+    interface HTMLAcmeBannerElement extends Components.AcmeBanner, HTMLStencilElement {
     }
-    var HTMLSimpleLabelElement: {
-        prototype: HTMLSimpleLabelElement;
-        new (): HTMLSimpleLabelElement;
+    var HTMLAcmeBannerElement: {
+        prototype: HTMLAcmeBannerElement;
+        new (): HTMLAcmeBannerElement;
+    };
+    interface HTMLAcmeNavbarElement extends Components.AcmeNavbar, HTMLStencilElement {
+    }
+    var HTMLAcmeNavbarElement: {
+        prototype: HTMLAcmeNavbarElement;
+        new (): HTMLAcmeNavbarElement;
+    };
+    interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
+    }
+    var HTMLLowerBarElement: {
+        prototype: HTMLLowerBarElement;
+        new (): HTMLLowerBarElement;
+    };
+    interface HTMLUpperBarElement extends Components.UpperBar, HTMLStencilElement {
+    }
+    var HTMLUpperBarElement: {
+        prototype: HTMLUpperBarElement;
+        new (): HTMLUpperBarElement;
     };
     interface HTMLElementTagNameMap {
-        "simple-label": HTMLSimpleLabelElement;
+        "acme-banner": HTMLAcmeBannerElement;
+        "acme-navbar": HTMLAcmeNavbarElement;
+        "lower-bar": HTMLLowerBarElement;
+        "upper-bar": HTMLUpperBarElement;
     }
 }
 declare namespace LocalJSX {
-    interface SimpleLabel {
+    interface AcmeBanner {
+    }
+    interface AcmeNavbar {
+        "contacts"?: string;
+        "phone"?: string;
+        "products"?: string;
+        "services"?: string;
+        "tagline"?: string;
+        "who"?: string;
+    }
+    interface LowerBar {
+        "contacts"?: string;
+        "products"?: string;
+        "services"?: string;
+        "who"?: string;
+    }
+    interface UpperBar {
+        "phone"?: string;
+        "tagline"?: string;
     }
     interface IntrinsicElements {
-        "simple-label": SimpleLabel;
+        "acme-banner": AcmeBanner;
+        "acme-navbar": AcmeNavbar;
+        "lower-bar": LowerBar;
+        "upper-bar": UpperBar;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "simple-label": LocalJSX.SimpleLabel & JSXBase.HTMLAttributes<HTMLSimpleLabelElement>;
+            "acme-banner": LocalJSX.AcmeBanner & JSXBase.HTMLAttributes<HTMLAcmeBannerElement>;
+            "acme-navbar": LocalJSX.AcmeNavbar & JSXBase.HTMLAttributes<HTMLAcmeNavbarElement>;
+            "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
+            "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;
         }
     }
 }

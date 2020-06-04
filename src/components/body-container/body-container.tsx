@@ -12,7 +12,7 @@ export class BodyContainer implements ComponentInterface {
       <Host>
         <body-box></body-box>
         <body-box2></body-box2>
-        <form-prova></form-prova>
+        <acme-form></acme-form>
       </Host>
     );
   }

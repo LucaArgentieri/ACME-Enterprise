@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h, Prop, State, Element, Listen } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'acme-navbar',

@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, State, Element, Listen } from '@stencil/core';
+import { Component, ComponentInterface, h} from '@stencil/core';
 
 @Component({
   tag: 'acme-banner',
@@ -8,22 +8,22 @@ import { Component, ComponentInterface, h, State, Element, Listen } from '@stenc
 })
 export class AcmeBanner implements ComponentInterface {
 
-  @State() divs_1: HTMLAcmeBannerElement[] = [];
+  /*@State() divs_1: HTMLAcmeBannerElement[] = [];
   @State() divs_2: HTMLAcmeBannerElement[] = [];
   @State() divs_3: HTMLAcmeBannerElement[] = [];
   @State() divs_4: HTMLAcmeBannerElement[] = [];
-  @Element() el: HTMLElement;
+  @Element() el: HTMLElement;*/
 
-  componentWillLoad() {
+  /*componentWillLoad() {
    // window.addEventListener("load", () => {
       this.divs_1 = Array.from(this.el.shadowRoot.querySelectorAll('.photo_1'));
       this.divs_2 = Array.from(this.el.shadowRoot.querySelectorAll('.photo_2'));
       this.divs_3 = Array.from(this.el.shadowRoot.querySelectorAll('.photo_3'));
       this.divs_4 = Array.from(this.el.shadowRoot.querySelectorAll('.photo_4'));
       console.log(this.divs_1);
-  };
+  };*/
 
-  show() {
+  /*show() {
       let delay_1 = 0;
       let delay_2 = 0.2;
       let delay_3 = 0.4;
@@ -54,10 +54,11 @@ export class AcmeBanner implements ComponentInterface {
       delay_4 = delay_4 + 0.35;
   })
    // })
-} 
+} */
 
   render() {
-    return <div class="banner"> 
+    return <div class="banner">
+      <div class="promotional_text"><p class="primary_text"><span class="colored">Soluzioni finanziarie</span> per<br/> far fronte alla crisi<br/> COVID-19</p><p class="secondary_text">Finanziamenti digitali su misura che semplificano <br/>l'accesso al credito e la gestione della liquidità.<br/>Meno burocrazia, più opportunità.</p><button>Scopri di più</button></div> 
     </div>
 
   }

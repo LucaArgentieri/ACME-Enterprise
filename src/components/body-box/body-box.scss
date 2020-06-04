@@ -75,7 +75,7 @@ body {
 }
 .card {
   width: 300px;
-  height: auto;
+  height: 380px;
   padding-bottom: 20px;
   border-radius: 20px;
   border: 0.5px solid #C4C4C4;
@@ -162,9 +162,9 @@ body {
 }
 @media(max-width:1000px){
   .card1 {
-    flex-grow: 3;
     display: flex;
     width: 100%;
+    height: auto;
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
@@ -180,7 +180,7 @@ body {
     margin-top: 10px;
   }
 }
-@media(max-width:900px){
+@media(max-width:630px){
   .card1 {
     display: block;
     flex-grow: initial;
@@ -200,5 +200,19 @@ body {
   }
   .container_info h2 {
     font-size: 20px;
+  }
+}
+@media(max-width:320px){
+  .container_info h1 {
+    font-size: 19px;
+  }
+  .container_info span {
+    font-size: 19px;
+  }
+  .container_info h2 {
+    font-size: 19px;
+  }
+  .container_button {
+    font-size: 19px;
   }
 }

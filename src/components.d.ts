@@ -18,6 +18,8 @@ export namespace Components {
     }
     interface BodyContainer {
     }
+    interface FormProva {
+    }
     interface TextBox {
     }
 }
@@ -58,6 +60,12 @@ declare global {
         prototype: HTMLBodyContainerElement;
         new (): HTMLBodyContainerElement;
     };
+    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
+    }
+    var HTMLFormProvaElement: {
+        prototype: HTMLFormProvaElement;
+        new (): HTMLFormProvaElement;
+    };
     interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
     }
     var HTMLTextBoxElement: {
@@ -71,6 +79,7 @@ declare global {
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
+        "form-prova": HTMLFormProvaElement;
         "text-box": HTMLTextBoxElement;
     }
 }
@@ -87,6 +96,8 @@ declare namespace LocalJSX {
     }
     interface BodyContainer {
     }
+    interface FormProva {
+    }
     interface TextBox {
     }
     interface IntrinsicElements {
@@ -96,6 +107,7 @@ declare namespace LocalJSX {
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
+        "form-prova": FormProva;
         "text-box": TextBox;
     }
 }
@@ -109,6 +121,7 @@ declare module "@stencil/core" {
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
+            "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
         }
     }

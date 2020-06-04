@@ -1,4 +1,6 @@
 .big_container {
+  font-family: 'Poppins';
+  color: #fff;
   display: flex;
   margin-left: 75px;
   margin-right: 75px;
@@ -13,8 +15,14 @@
   
 }
 
+h4 {
+  font-size: 24px;
+}
+
 .container {
+  padding-top: 20px;
   text-align: center;
   background-color: $primary-color;
   width: 50%;
 }
+

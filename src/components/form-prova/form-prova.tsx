@@ -1,66 +1,71 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
 
 @Component({
-  tag: 'acme-form',
-  styleUrl: 'acme-form.scss',
+  tag: 'form-prova',
+  styleUrl: 'form-prova.scss',
   shadow: true,
 })
-export class AcmeForm implements ComponentInterface {
+export class FormProva implements ComponentInterface {
 
   render() {
     return (
-      <div class='big_container'>
+      <div class='wrapper'>
         <div class='img_background'></div>
-        <div class='container'>
+
+        <div class='form_inputs'>
           <h4>Contattaci</h4>
           <form id='form' class='form'>
 
-            <div class='form_control'>
+            <p class='form_control'>
               <label>
-                Nome
-              <input
+                <input
                   type='text'
                   id='name'
                   placeholder='Nome'
                 />
               </label>
-            </div>
+            </p>
 
-            <div class='form_control'>
+            <p class='form_control'>
               <label>
-                Cognome
-              <input
+                <input
                   type='text'
                   id='surname'
                   placeholder='Cognome'
                 />
               </label>
-            </div>
+            </p>
 
-            <div class='form_control'>
+            <p class='form_control'>
               <label>
-                Numero
-              <input
+                <input
                   type='text'
                   id='number'
                   placeholder='Numero'
                 />
               </label>
-            </div>
+            </p>
 
-            <div class='form_control'>
+            <p class='form_control'>
               <label>
-                email
-              <input
+
+                <input
                   type='text'
                   id='email'
                   placeholder='Email'
+
                 />
               </label>
-            </div>
-            <textarea></textarea>
-            <button type="submit">Submit</button>
+            </p>
+
+            <p class='full-width'>
+              <label>
+                <textarea id='message' placeholder='inserisci un messaggio'></textarea>
+              </label>
+            </p>
+            <button type="submit">INVIA</button>
           </form>
+
         </div>
       </div>
     );

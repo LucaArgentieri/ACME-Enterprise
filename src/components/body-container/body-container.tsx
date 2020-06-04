@@ -10,9 +10,9 @@ export class BodyContainer implements ComponentInterface {
   render() {
     return (
       <Host>
+        <text-box></text-box>
         <body-box></body-box>
         <body-box2></body-box2>
-        <acme-form></acme-form>
       </Host>
     );
   }

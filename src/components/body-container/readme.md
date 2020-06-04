@@ -9,15 +9,16 @@
 
 ### Depends on
 
-- [text-box](../text-box)
 - [body-box](../body-box)
+- [body-box2](../body-box2)
+- [acme-form](../acme-form)
 
 ### Graph
 ```mermaid
 graph TD;
-  body-container --> text-box
   body-container --> body-box
-  body-box --> body-box2
+  body-container --> body-box2
+  body-container --> acme-form
   style body-container fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

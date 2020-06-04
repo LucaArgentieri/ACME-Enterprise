@@ -19,6 +19,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [app-container](../app-container)
+
 ### Depends on
 
 - [upper-bar](../upper-bar)
@@ -31,6 +35,7 @@ graph TD;
   acme-navbar --> upper-bar
   acme-navbar --> lower-bar
   acme-navbar --> acme-banner
+  app-container --> acme-navbar
   style acme-navbar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

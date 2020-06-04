@@ -9,12 +9,12 @@
 
 ### Used by
 
- - [body-container](../body-container)
+ - [app-container](../app-container)
 
 ### Graph
 ```mermaid
 graph TD;
-  body-container --> acme-form
+  app-container --> acme-form
   style acme-form fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

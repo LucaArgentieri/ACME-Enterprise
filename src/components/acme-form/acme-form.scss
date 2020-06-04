@@ -1,3 +1,20 @@
-:host {
-  display: block;
+.big_container {
+  display: flex;
+  margin-left: 75px;
+  margin-right: 75px;
+  height: 350px;
+}
+
+.img_background {
+  background-image: url('assets/acme-building-1.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  
+}
+
+.container {
+  text-align: center;
+  background-color: $primary-color;
+  width: 50%;
 }

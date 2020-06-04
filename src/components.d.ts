@@ -8,6 +8,10 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AcmeFooter {
     }
+    interface AcmeForm {
+    }
+    interface BgForm {
+    }
     interface BodyBox {
     }
     interface BodyBox2 {
@@ -23,6 +27,18 @@ declare global {
     var HTMLAcmeFooterElement: {
         prototype: HTMLAcmeFooterElement;
         new (): HTMLAcmeFooterElement;
+    };
+    interface HTMLAcmeFormElement extends Components.AcmeForm, HTMLStencilElement {
+    }
+    var HTMLAcmeFormElement: {
+        prototype: HTMLAcmeFormElement;
+        new (): HTMLAcmeFormElement;
+    };
+    interface HTMLBgFormElement extends Components.BgForm, HTMLStencilElement {
+    }
+    var HTMLBgFormElement: {
+        prototype: HTMLBgFormElement;
+        new (): HTMLBgFormElement;
     };
     interface HTMLBodyBoxElement extends Components.BodyBox, HTMLStencilElement {
     }
@@ -50,6 +66,8 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "acme-footer": HTMLAcmeFooterElement;
+        "acme-form": HTMLAcmeFormElement;
+        "bg-form": HTMLBgFormElement;
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
@@ -58,6 +76,10 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AcmeFooter {
+    }
+    interface AcmeForm {
+    }
+    interface BgForm {
     }
     interface BodyBox {
     }
@@ -69,6 +91,8 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "acme-footer": AcmeFooter;
+        "acme-form": AcmeForm;
+        "bg-form": BgForm;
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
@@ -80,6 +104,8 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "acme-footer": LocalJSX.AcmeFooter & JSXBase.HTMLAttributes<HTMLAcmeFooterElement>;
+            "acme-form": LocalJSX.AcmeForm & JSXBase.HTMLAttributes<HTMLAcmeFormElement>;
+            "bg-form": LocalJSX.BgForm & JSXBase.HTMLAttributes<HTMLBgFormElement>;
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;

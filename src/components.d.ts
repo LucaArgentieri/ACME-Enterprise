@@ -6,123 +6,95 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface AcmeFooter {
+    interface AcmeBanner {
     }
-    interface AcmeForm {
+    interface AcmeNavbar {
+        "contacts": string;
+        "phone": string;
+        "products": string;
+        "services": string;
+        "tagline": string;
+        "who": string;
     }
-    interface BgForm {
+    interface LowerBar {
+        "contacts": string;
+        "products": string;
+        "services": string;
+        "who": string;
     }
-    interface BodyBox {
-    }
-    interface BodyBox2 {
-    }
-    interface BodyContainer {
-    }
-    interface FormProva {
-    }
-    interface TextBox {
+    interface UpperBar {
+        "phone": string;
+        "tagline": string;
     }
 }
 declare global {
-    interface HTMLAcmeFooterElement extends Components.AcmeFooter, HTMLStencilElement {
+    interface HTMLAcmeBannerElement extends Components.AcmeBanner, HTMLStencilElement {
     }
-    var HTMLAcmeFooterElement: {
-        prototype: HTMLAcmeFooterElement;
-        new (): HTMLAcmeFooterElement;
+    var HTMLAcmeBannerElement: {
+        prototype: HTMLAcmeBannerElement;
+        new (): HTMLAcmeBannerElement;
     };
-    interface HTMLAcmeFormElement extends Components.AcmeForm, HTMLStencilElement {
+    interface HTMLAcmeNavbarElement extends Components.AcmeNavbar, HTMLStencilElement {
     }
-    var HTMLAcmeFormElement: {
-        prototype: HTMLAcmeFormElement;
-        new (): HTMLAcmeFormElement;
+    var HTMLAcmeNavbarElement: {
+        prototype: HTMLAcmeNavbarElement;
+        new (): HTMLAcmeNavbarElement;
     };
-    interface HTMLBgFormElement extends Components.BgForm, HTMLStencilElement {
+    interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
     }
-    var HTMLBgFormElement: {
-        prototype: HTMLBgFormElement;
-        new (): HTMLBgFormElement;
+    var HTMLLowerBarElement: {
+        prototype: HTMLLowerBarElement;
+        new (): HTMLLowerBarElement;
     };
-    interface HTMLBodyBoxElement extends Components.BodyBox, HTMLStencilElement {
+    interface HTMLUpperBarElement extends Components.UpperBar, HTMLStencilElement {
     }
-    var HTMLBodyBoxElement: {
-        prototype: HTMLBodyBoxElement;
-        new (): HTMLBodyBoxElement;
-    };
-    interface HTMLBodyBox2Element extends Components.BodyBox2, HTMLStencilElement {
-    }
-    var HTMLBodyBox2Element: {
-        prototype: HTMLBodyBox2Element;
-        new (): HTMLBodyBox2Element;
-    };
-    interface HTMLBodyContainerElement extends Components.BodyContainer, HTMLStencilElement {
-    }
-    var HTMLBodyContainerElement: {
-        prototype: HTMLBodyContainerElement;
-        new (): HTMLBodyContainerElement;
-    };
-    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
-    }
-    var HTMLFormProvaElement: {
-        prototype: HTMLFormProvaElement;
-        new (): HTMLFormProvaElement;
-    };
-    interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
-    }
-    var HTMLTextBoxElement: {
-        prototype: HTMLTextBoxElement;
-        new (): HTMLTextBoxElement;
+    var HTMLUpperBarElement: {
+        prototype: HTMLUpperBarElement;
+        new (): HTMLUpperBarElement;
     };
     interface HTMLElementTagNameMap {
-        "acme-footer": HTMLAcmeFooterElement;
-        "acme-form": HTMLAcmeFormElement;
-        "bg-form": HTMLBgFormElement;
-        "body-box": HTMLBodyBoxElement;
-        "body-box2": HTMLBodyBox2Element;
-        "body-container": HTMLBodyContainerElement;
-        "form-prova": HTMLFormProvaElement;
-        "text-box": HTMLTextBoxElement;
+        "acme-banner": HTMLAcmeBannerElement;
+        "acme-navbar": HTMLAcmeNavbarElement;
+        "lower-bar": HTMLLowerBarElement;
+        "upper-bar": HTMLUpperBarElement;
     }
 }
 declare namespace LocalJSX {
-    interface AcmeFooter {
+    interface AcmeBanner {
     }
-    interface AcmeForm {
+    interface AcmeNavbar {
+        "contacts"?: string;
+        "phone"?: string;
+        "products"?: string;
+        "services"?: string;
+        "tagline"?: string;
+        "who"?: string;
     }
-    interface BgForm {
+    interface LowerBar {
+        "contacts"?: string;
+        "products"?: string;
+        "services"?: string;
+        "who"?: string;
     }
-    interface BodyBox {
-    }
-    interface BodyBox2 {
-    }
-    interface BodyContainer {
-    }
-    interface FormProva {
-    }
-    interface TextBox {
+    interface UpperBar {
+        "phone"?: string;
+        "tagline"?: string;
     }
     interface IntrinsicElements {
-        "acme-footer": AcmeFooter;
-        "acme-form": AcmeForm;
-        "bg-form": BgForm;
-        "body-box": BodyBox;
-        "body-box2": BodyBox2;
-        "body-container": BodyContainer;
-        "form-prova": FormProva;
-        "text-box": TextBox;
+        "acme-banner": AcmeBanner;
+        "acme-navbar": AcmeNavbar;
+        "lower-bar": LowerBar;
+        "upper-bar": UpperBar;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "acme-footer": LocalJSX.AcmeFooter & JSXBase.HTMLAttributes<HTMLAcmeFooterElement>;
-            "acme-form": LocalJSX.AcmeForm & JSXBase.HTMLAttributes<HTMLAcmeFormElement>;
-            "bg-form": LocalJSX.BgForm & JSXBase.HTMLAttributes<HTMLBgFormElement>;
-            "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
-            "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
-            "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
-            "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
-            "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
+            "acme-banner": LocalJSX.AcmeBanner & JSXBase.HTMLAttributes<HTMLAcmeBannerElement>;
+            "acme-navbar": LocalJSX.AcmeNavbar & JSXBase.HTMLAttributes<HTMLAcmeNavbarElement>;
+            "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
+            "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;
         }
     }
 }

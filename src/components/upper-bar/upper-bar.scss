@@ -1,0 +1,32 @@
+.upper {
+  background-color: $primary-color;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;;
+  font-family: $primary-font;
+  padding: 12px 100px;
+  height: 8vh;
+}
+.upper div {
+  display: flex;
+  justify-content: flex-end;
+}
+.upper div p {
+  padding: 0px 20px;
+}
+input {
+  border-radius: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+.flex {
+  display: flex;
+}

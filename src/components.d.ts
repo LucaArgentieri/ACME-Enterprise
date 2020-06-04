@@ -6,16 +6,42 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AcmeFooter {
+    }
+    interface AcmeForm {
+    }
+    interface BgForm {
+    }
     interface BodyBox {
     }
     interface BodyBox2 {
     }
     interface BodyContainer {
     }
+    interface FormProva {
+    }
     interface TextBox {
     }
 }
 declare global {
+    interface HTMLAcmeFooterElement extends Components.AcmeFooter, HTMLStencilElement {
+    }
+    var HTMLAcmeFooterElement: {
+        prototype: HTMLAcmeFooterElement;
+        new (): HTMLAcmeFooterElement;
+    };
+    interface HTMLAcmeFormElement extends Components.AcmeForm, HTMLStencilElement {
+    }
+    var HTMLAcmeFormElement: {
+        prototype: HTMLAcmeFormElement;
+        new (): HTMLAcmeFormElement;
+    };
+    interface HTMLBgFormElement extends Components.BgForm, HTMLStencilElement {
+    }
+    var HTMLBgFormElement: {
+        prototype: HTMLBgFormElement;
+        new (): HTMLBgFormElement;
+    };
     interface HTMLBodyBoxElement extends Components.BodyBox, HTMLStencilElement {
     }
     var HTMLBodyBoxElement: {
@@ -34,6 +60,12 @@ declare global {
         prototype: HTMLBodyContainerElement;
         new (): HTMLBodyContainerElement;
     };
+    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
+    }
+    var HTMLFormProvaElement: {
+        prototype: HTMLFormProvaElement;
+        new (): HTMLFormProvaElement;
+    };
     interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
     }
     var HTMLTextBoxElement: {
@@ -41,25 +73,41 @@ declare global {
         new (): HTMLTextBoxElement;
     };
     interface HTMLElementTagNameMap {
+        "acme-footer": HTMLAcmeFooterElement;
+        "acme-form": HTMLAcmeFormElement;
+        "bg-form": HTMLBgFormElement;
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
+        "form-prova": HTMLFormProvaElement;
         "text-box": HTMLTextBoxElement;
     }
 }
 declare namespace LocalJSX {
+    interface AcmeFooter {
+    }
+    interface AcmeForm {
+    }
+    interface BgForm {
+    }
     interface BodyBox {
     }
     interface BodyBox2 {
     }
     interface BodyContainer {
     }
+    interface FormProva {
+    }
     interface TextBox {
     }
     interface IntrinsicElements {
+        "acme-footer": AcmeFooter;
+        "acme-form": AcmeForm;
+        "bg-form": BgForm;
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
+        "form-prova": FormProva;
         "text-box": TextBox;
     }
 }
@@ -67,9 +115,13 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "acme-footer": LocalJSX.AcmeFooter & JSXBase.HTMLAttributes<HTMLAcmeFooterElement>;
+            "acme-form": LocalJSX.AcmeForm & JSXBase.HTMLAttributes<HTMLAcmeFormElement>;
+            "bg-form": LocalJSX.BgForm & JSXBase.HTMLAttributes<HTMLBgFormElement>;
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
+            "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
         }
     }

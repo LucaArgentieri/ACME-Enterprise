@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
+import { Component, ComponentInterface, Host, h } from '@stencil/core';
 
 @Component({
   tag: 'body-container',
@@ -9,10 +9,11 @@ export class BodyContainer implements ComponentInterface {
 
   render() {
     return (
-      <div>
-        <text-box></text-box>
+      <Host>
         <body-box></body-box>
-      </div>
+        <body-box2></body-box2>
+        <acme-form></acme-form>
+      </Host>
     );
   }
 

@@ -14,7 +14,7 @@ export class UpperBar implements ComponentInterface {
   render() {
     return <div class="upper">
       <h1>{this.tagline}</h1>
-      <div><p><input type="text"/></p><p><span>{this.phone}</span></p><p><a href="#">Login</a></p></div>
+      <div><p><input type="text"/></p><p class="flex"><img src="/assets/phone.svg" alt=""/><span>{this.phone}</span></p><p class="flex"><img src="/assets/users.svg" alt=""/><a href="#">Login</a></p></div>
       </div>
   }
 

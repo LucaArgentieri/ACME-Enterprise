@@ -8,7 +8,6 @@ import { Component, ComponentInterface, h } from '@stencil/core';
 })
 export class AcmeFooter implements ComponentInterface {
 
-
   render() {
     return (
       <footer class="footer">

@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
+import { Component, ComponentInterface, h, Prop, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'form-prova',
@@ -6,67 +6,26 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   shadow: true,
 })
 export class FormProva implements ComponentInterface {
+  /**
+   *  mutable Prop which will be changed by the user.
+   */
+  @Prop({ mutable: true }) value: string;
+
+  /**
+   * Every time the input is changed, we update the
+   * value attribute and emit it via an Event.
+   */
+  @Event() changed: EventEmitter<string>;
+
+  handleChange(ev) {
+    this.value = ev.target ? ev.target.value : null;
+    this.changed.emit(this.value);
+  }
 
   render() {
     return (
-      <div class='wrapper'>
-        <div class='img_background'></div>
-
-        <div class='form_inputs'>
-          <h4>Contattaci</h4>
-          <form id='form' class='form'>
-
-            <p class='form_control'>
-              <label>
-                <input
-                  type='text'
-                  id='name'
-                  placeholder='Nome'
-                />
-              </label>
-            </p>
-
-            <p class='form_control'>
-              <label>
-                <input
-                  type='text'
-                  id='surname'
-                  placeholder='Cognome'
-                />
-              </label>
-            </p>
-
-            <p class='form_control'>
-              <label>
-                <input
-                  type='text'
-                  id='number'
-                  placeholder='Numero'
-                />
-              </label>
-            </p>
-
-            <p class='form_control'>
-              <label>
-
-                <input
-                  type='text'
-                  id='email'
-                  placeholder='Email'
-
-                />
-              </label>
-            </p>
-
-            <p class='full-width'>
-              <label>
-                <textarea id='message' placeholder='inserisci un messaggio'></textarea>
-              </label>
-            </p>
-            <button type="submit">INVIA</button>
-          </form>
-
-        </div>
+      <div class='input-container'>
+        <input value={this.value} onInput={(ev) => this.handleChange(ev)} />
       </div>
     );
   }

@@ -19,6 +19,10 @@ export namespace Components {
     interface BodyContainer {
     }
     interface FormProva {
+        /**
+          * mutable Prop which will be changed by the user.
+         */
+        "value": string;
     }
     interface TextBox {
     }
@@ -97,6 +101,14 @@ declare namespace LocalJSX {
     interface BodyContainer {
     }
     interface FormProva {
+        /**
+          * Every time the input is changed, we update the value attribute and emit it via an Event.
+         */
+        "onChanged"?: (event: CustomEvent<string>) => void;
+        /**
+          * mutable Prop which will be changed by the user.
+         */
+        "value"?: string;
     }
     interface TextBox {
     }

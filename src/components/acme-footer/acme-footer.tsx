@@ -4,6 +4,7 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   tag: 'acme-footer',
   styleUrl: 'acme-footer.scss',
   shadow: true,
+  assetsDirs: ['/assets'],
 })
 export class AcmeFooter implements ComponentInterface {
 

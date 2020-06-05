@@ -9,12 +9,12 @@
 
 ### Used by
 
- - [body-box](../body-box)
+ - [body-container](../body-container)
 
 ### Graph
 ```mermaid
 graph TD;
-  body-box --> body-box2
+  body-container --> body-box2
   style body-box2 fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

@@ -1,4 +1,4 @@
-# body-box
+# acme-banner
 
 
 
@@ -9,13 +9,13 @@
 
 ### Used by
 
- - [body-container](../body-container)
+ - [acme-navbar](../acme-navbar)
 
 ### Graph
 ```mermaid
 graph TD;
-  body-container --> body-box
-  style body-box fill:#f9f,stroke:#333,stroke-width:4px
+  acme-navbar --> acme-banner
+  style acme-banner fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

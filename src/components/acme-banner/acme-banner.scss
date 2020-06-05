@@ -1,0 +1,38 @@
+.banner {
+  width: 100%;
+  height: 78vh;
+  background: url("/assets/acme-people.jpeg") no-repeat center center;
+  background-size: cover;
+}
+.promotional_text {
+  font-family: $font-primary;
+  color: white;
+  padding-top: 70px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.primary_text {
+  font-size: 45px;
+  font-weight: 400;
+}
+.secondary_text {
+  font-size: 20px;
+  font-weight: 200;
+}
+.colored {
+  color: $secondary-color;
+}
+button {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid white;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  margin-left: 150px;
+  cursor: pointer;
+}

@@ -13,7 +13,6 @@
 }
 
 .img_background {
-  //background-image: url('assets/acme-building-1.jpeg');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -103,7 +102,7 @@ textarea {
     text-align: left;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .wrapper {
       grid-template-columns: 1fr ;
       margin-left: 0;

@@ -23,9 +23,7 @@ export class AppContainer implements ComponentInterface {
         <acme-footer
           headFiveOne="Azienda"
           headFiveTwo="Servizi"
-          headFiveThree="Contatti"
-        >
-
+          headFiveThree="Contatti">
         </acme-footer>
       </Host>
     )

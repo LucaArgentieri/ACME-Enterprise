@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h} from '@stencil/core';
+import { Component, ComponentInterface, h } from '@stencil/core';
 
 @Component({
   tag: 'acme-banner',
@@ -58,7 +58,12 @@ export class AcmeBanner implements ComponentInterface {
 
   render() {
     return <div class="banner">
-      <div class="promotional_text"><p class="primary_text"><span class="colored">Soluzioni finanziarie</span> per<br/> far fronte alla crisi<br/> COVID-19</p><p class="secondary_text">Finanziamenti digitali su misura che semplificano <br/>l'accesso al credito e la gestione della liquidità.<br/>Meno burocrazia, più opportunità.</p><button>Scopri di più</button></div> 
+      <div class="promotional_text">
+        <p class="primary_text">
+          <span class="colored">Soluzioni finanziarie</span> per<br /> far fronte alla crisi<br /> COVID-19</p>
+        <p class="secondary_text">Finanziamenti digitali su misura che semplificano <br />l'accesso al credito e la gestione della liquidità.<br />Meno burocrazia, più opportunità.</p>
+        <button>Scopri di più</button>
+      </div>
     </div>
 
   }

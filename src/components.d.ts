@@ -8,12 +8,20 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AcmeBanner {
     }
+    interface AcmeHamburger {
+    }
     interface AcmeNavbar {
         "contacts": string;
         "phone": string;
         "products": string;
         "services": string;
         "tagline": string;
+        "who": string;
+    }
+    interface HamburgerBody {
+        "contacts": string;
+        "products": string;
+        "services": string;
         "who": string;
     }
     interface LowerBar {
@@ -34,11 +42,23 @@ declare global {
         prototype: HTMLAcmeBannerElement;
         new (): HTMLAcmeBannerElement;
     };
+    interface HTMLAcmeHamburgerElement extends Components.AcmeHamburger, HTMLStencilElement {
+    }
+    var HTMLAcmeHamburgerElement: {
+        prototype: HTMLAcmeHamburgerElement;
+        new (): HTMLAcmeHamburgerElement;
+    };
     interface HTMLAcmeNavbarElement extends Components.AcmeNavbar, HTMLStencilElement {
     }
     var HTMLAcmeNavbarElement: {
         prototype: HTMLAcmeNavbarElement;
         new (): HTMLAcmeNavbarElement;
+    };
+    interface HTMLHamburgerBodyElement extends Components.HamburgerBody, HTMLStencilElement {
+    }
+    var HTMLHamburgerBodyElement: {
+        prototype: HTMLHamburgerBodyElement;
+        new (): HTMLHamburgerBodyElement;
     };
     interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
     }
@@ -54,7 +74,9 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "acme-banner": HTMLAcmeBannerElement;
+        "acme-hamburger": HTMLAcmeHamburgerElement;
         "acme-navbar": HTMLAcmeNavbarElement;
+        "hamburger-body": HTMLHamburgerBodyElement;
         "lower-bar": HTMLLowerBarElement;
         "upper-bar": HTMLUpperBarElement;
     }
@@ -62,12 +84,20 @@ declare global {
 declare namespace LocalJSX {
     interface AcmeBanner {
     }
+    interface AcmeHamburger {
+    }
     interface AcmeNavbar {
         "contacts"?: string;
         "phone"?: string;
         "products"?: string;
         "services"?: string;
         "tagline"?: string;
+        "who"?: string;
+    }
+    interface HamburgerBody {
+        "contacts"?: string;
+        "products"?: string;
+        "services"?: string;
         "who"?: string;
     }
     interface LowerBar {
@@ -82,7 +112,9 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "acme-banner": AcmeBanner;
+        "acme-hamburger": AcmeHamburger;
         "acme-navbar": AcmeNavbar;
+        "hamburger-body": HamburgerBody;
         "lower-bar": LowerBar;
         "upper-bar": UpperBar;
     }
@@ -92,7 +124,9 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "acme-banner": LocalJSX.AcmeBanner & JSXBase.HTMLAttributes<HTMLAcmeBannerElement>;
+            "acme-hamburger": LocalJSX.AcmeHamburger & JSXBase.HTMLAttributes<HTMLAcmeHamburgerElement>;
             "acme-navbar": LocalJSX.AcmeNavbar & JSXBase.HTMLAttributes<HTMLAcmeNavbarElement>;
+            "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
             "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;
         }

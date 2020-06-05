@@ -16,6 +16,8 @@
 }
 input {
   border-radius: 10px;
+  outline: none;
+  padding: 0px 10px;
 }
 a {
   color: white;
@@ -29,4 +31,14 @@ img {
 }
 .flex {
   display: flex;
+}
+@media (max-width: 930px) {
+  .upper {
+    padding: 12px 50px;
+  }
+}
+@media (max-width: 820px) {
+  .upper {
+    display: none;
+  }
 }

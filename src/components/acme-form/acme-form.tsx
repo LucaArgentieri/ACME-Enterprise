@@ -48,6 +48,7 @@ export class AcmeForm implements ComponentInterface {
             <p class='form_control'>
               <label>
                 <input
+                  value={this.nome}
                   type='text'
                   id='name'
                   placeholder='nome'

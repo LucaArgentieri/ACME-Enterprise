@@ -41,3 +41,8 @@ button {
     height: 86vh;
   }
 }
+@media (max-width: 700px) {
+  .secondary_text {
+    display: none;
+  }
+}

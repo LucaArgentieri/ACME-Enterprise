@@ -1,16 +1,20 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
+import { Component, ComponentInterface, h, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'acme-form',
   styleUrl: 'acme-form.scss',
   shadow: true,
+  assetsDirs: ['/assets'],
 })
 export class AcmeForm implements ComponentInterface {
+  private acmeBackground = {
+    backgroundImage: `url("${getAssetPath('/assets/acme-building-1.jpeg')}")`,
+  };
 
   render() {
     return (
       <div class='wrapper'>
-        <div class='img_background'></div>
+        <div class='img_background' style={this.acmeBackground}></div>
 
         <div class='form_inputs'>
           <h4>Contattaci</h4>

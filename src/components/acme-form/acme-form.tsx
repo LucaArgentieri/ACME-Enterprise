@@ -15,7 +15,7 @@ export class AcmeForm implements ComponentInterface {
 
   @State() nome: string;
   @State() cognome: string;
-  @State() numero: number;
+  @State() numero: string;
 
   private handleSubmit(e) {
     e.preventDefault();
@@ -23,8 +23,8 @@ export class AcmeForm implements ComponentInterface {
     console.log(this.nome, this.cognome, this.numero);
   }
 
-  private handleName(event) {
-    this.nome = event.target.value;
+  private handleName(e) {
+    this.nome = e.target.value;
   }
 
   private handleSurname(event) {
@@ -34,6 +34,7 @@ export class AcmeForm implements ComponentInterface {
   private handleNumber(event) {
     this.numero = event.target.value;
   }
+
 
   render() {
     return (
@@ -49,10 +50,11 @@ export class AcmeForm implements ComponentInterface {
                 <input
                   type='text'
                   id='name'
-                  placeholder='Nome'
-                  onInput={(event) => this.handleName(event)}
+                  placeholder='nome'
+                  onInput={(e) => this.handleName(e)}
                 />
               </label>
+
             </p>
 
             <p class='form_control'>

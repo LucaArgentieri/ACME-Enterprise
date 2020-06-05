@@ -9,6 +9,18 @@ export namespace Components {
     interface AcmeBanner {
     }
     interface AcmeFooter {
+        /**
+          * value of first h5 in the footer
+         */
+        "headFiveOne": string;
+        /**
+          * value of the last h5 in the footer
+         */
+        "headFiveThree": string;
+        /**
+          * value of the second h5 in the footer
+         */
+        "headFiveTwo": string;
     }
     interface AcmeForm {
     }
@@ -29,8 +41,6 @@ export namespace Components {
     interface BodyBox2 {
     }
     interface BodyContainer {
-    }
-    interface FormProva {
     }
     interface LowerBar {
         "contacts": string;
@@ -100,12 +110,6 @@ declare global {
         prototype: HTMLBodyContainerElement;
         new (): HTMLBodyContainerElement;
     };
-    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
-    }
-    var HTMLFormProvaElement: {
-        prototype: HTMLFormProvaElement;
-        new (): HTMLFormProvaElement;
-    };
     interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
     }
     var HTMLLowerBarElement: {
@@ -134,7 +138,6 @@ declare global {
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
-        "form-prova": HTMLFormProvaElement;
         "lower-bar": HTMLLowerBarElement;
         "text-box": HTMLTextBoxElement;
         "upper-bar": HTMLUpperBarElement;
@@ -144,6 +147,18 @@ declare namespace LocalJSX {
     interface AcmeBanner {
     }
     interface AcmeFooter {
+        /**
+          * value of first h5 in the footer
+         */
+        "headFiveOne"?: string;
+        /**
+          * value of the last h5 in the footer
+         */
+        "headFiveThree"?: string;
+        /**
+          * value of the second h5 in the footer
+         */
+        "headFiveTwo"?: string;
     }
     interface AcmeForm {
     }
@@ -164,8 +179,6 @@ declare namespace LocalJSX {
     interface BodyBox2 {
     }
     interface BodyContainer {
-    }
-    interface FormProva {
     }
     interface LowerBar {
         "contacts"?: string;
@@ -189,7 +202,6 @@ declare namespace LocalJSX {
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
-        "form-prova": FormProva;
         "lower-bar": LowerBar;
         "text-box": TextBox;
         "upper-bar": UpperBar;
@@ -208,7 +220,6 @@ declare module "@stencil/core" {
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
-            "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
             "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;

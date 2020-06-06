@@ -9,7 +9,9 @@ div {
 p {
   margin-bottom: 20px;
   text-align: center;
+  cursor: pointer;
 }
+
 @media (max-width: 375px) {
   div {
     padding-top: 150px;

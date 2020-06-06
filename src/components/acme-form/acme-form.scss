@@ -102,16 +102,32 @@ textarea {
     padding: .2rem;
     text-align: left;
 }
-
+@media(max-width:1300px){
+  .wrapper{
+    margin-top: 400px;
+  }
+}
+@media(max-width:1000px){
+  .wrapper {
+    margin-top: 700px;
+  }
+}
 @media (max-width: 700px) {
   .wrapper {
       grid-template-columns: 1fr ;
       margin-left: 0;
       margin-right: 0;
+      margin-top: 750px;
   }
 
   .img_background {
     display: none;
+  }
+}
+
+@media(max-width:630px){
+  .wrapper {
+    margin-top: 1300px;
   }
 }
 

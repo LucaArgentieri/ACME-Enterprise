@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 .container_info {
   display: flex;
@@ -149,6 +150,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media(max-width:1300px){
+  .img_box{
+    margin-top: 200px;
+  }
+}
 @media(max-width:1000px){
   .card1 {
     display: flex;
@@ -157,24 +163,34 @@ body {
     margin-bottom: 50px;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  div.container_p_button p {
+    margin-left: 30px;
   }
   .container_p_button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-right: 10px;
   }
   .card p {
     height: auto;
     margin-top: 10px;
+    margin-left: 20px;
   }
-  .main_box {
-    margin-top: 100px;
+  .img_box {
+    margin-top: 350px;
   }
 }
 @media(max-width:630px){
   .main_box {
     margin-top: 900px;
+  }
+  .img_box {
+    margin-top: 200px;
   }
   .card1 {
     display: block;

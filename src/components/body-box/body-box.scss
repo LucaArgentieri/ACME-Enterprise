@@ -160,6 +160,9 @@ body {
   align-items: center;
 }
 @media(max-width:1000px){
+  .box_rosso {
+    display: none;
+  }
   .card1 {
     display: flex;
     width: 100%;

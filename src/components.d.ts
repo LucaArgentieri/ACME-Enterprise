@@ -40,6 +40,14 @@ export namespace Components {
         "services": string;
         "who": string;
     }
+    interface FormProva {
+    }
+    interface HamburgerBody {
+        "contacts": string;
+        "products": string;
+        "services": string;
+        "who": string;
+    }
     interface LowerBar {
         "contacts": string;
         "products": string;
@@ -126,6 +134,18 @@ declare global {
         prototype: HTMLHamburgerBodyElement;
         new (): HTMLHamburgerBodyElement;
     };
+    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
+    }
+    var HTMLFormProvaElement: {
+        prototype: HTMLFormProvaElement;
+        new (): HTMLFormProvaElement;
+    };
+    interface HTMLHamburgerBodyElement extends Components.HamburgerBody, HTMLStencilElement {
+    }
+    var HTMLHamburgerBodyElement: {
+        prototype: HTMLHamburgerBodyElement;
+        new (): HTMLHamburgerBodyElement;
+    };
     interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
     }
     var HTMLLowerBarElement: {
@@ -155,6 +175,13 @@ declare global {
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
+<<<<<<< Updated upstream
+=======
+        "faq-accordion": HTMLFaqAccordionElement;
+        "faq-text": HTMLFaqTextElement;
+        "faq-wrap": HTMLFaqWrapElement;
+        "faq-wrap-accordion": HTMLFaqWrapAccordionElement;
+>>>>>>> Stashed changes
         "form-prova": HTMLFormProvaElement;
         "hamburger-body": HTMLHamburgerBodyElement;
         "lower-bar": HTMLLowerBarElement;
@@ -197,6 +224,14 @@ declare namespace LocalJSX {
         "services"?: string;
         "who"?: string;
     }
+    interface FormProva {
+    }
+    interface HamburgerBody {
+        "contacts"?: string;
+        "products"?: string;
+        "services"?: string;
+        "who"?: string;
+    }
     interface LowerBar {
         "contacts"?: string;
         "products"?: string;
@@ -220,6 +255,13 @@ declare namespace LocalJSX {
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
+<<<<<<< Updated upstream
+=======
+        "faq-accordion": FaqAccordion;
+        "faq-text": FaqText;
+        "faq-wrap": FaqWrap;
+        "faq-wrap-accordion": FaqWrapAccordion;
+>>>>>>> Stashed changes
         "form-prova": FormProva;
         "hamburger-body": HamburgerBody;
         "lower-bar": LowerBar;
@@ -241,6 +283,13 @@ declare module "@stencil/core" {
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
+<<<<<<< Updated upstream
+=======
+            "faq-accordion": LocalJSX.FaqAccordion & JSXBase.HTMLAttributes<HTMLFaqAccordionElement>;
+            "faq-text": LocalJSX.FaqText & JSXBase.HTMLAttributes<HTMLFaqTextElement>;
+            "faq-wrap": LocalJSX.FaqWrap & JSXBase.HTMLAttributes<HTMLFaqWrapElement>;
+            "faq-wrap-accordion": LocalJSX.FaqWrapAccordion & JSXBase.HTMLAttributes<HTMLFaqWrapAccordionElement>;
+>>>>>>> Stashed changes
             "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
             "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;

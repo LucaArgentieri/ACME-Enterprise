@@ -6,7 +6,7 @@ import { Component, ComponentInterface, h, Listen, Element, State } from '@stenc
   shadow: true,
 })
 export class AcmeHamburger implements ComponentInterface {
-  @Element() el: HTMLElement;
+  @Element() el: HTMLAcmeHamburgerElement;
   @State() button : HTMLAcmeHamburgerElement;
   @State() menu : HTMLHamburgerBodyElement;
 
@@ -15,6 +15,7 @@ export class AcmeHamburger implements ComponentInterface {
     this.menu = document.querySelector('acme-navbar').shadowRoot.querySelector('lower-bar').shadowRoot.querySelector('hamburger-body');
     console.log(this.menu);
   }
+  // eslint-disable-next-line @stencil/prefer-vdom-listener
   @Listen('click')
      showMenu(ev) {
     if (this.button.innerHTML === '☰') {

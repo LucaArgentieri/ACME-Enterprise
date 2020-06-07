@@ -30,7 +30,7 @@ export class FaqAccordion implements ComponentInterface {
           onClick={() => this.toggleComponent()}
         >
           {this.question}
-          {this.toggle ? <span>&#9650;</span> : <span>&#9660;</span>}
+          {this.toggle ? <span>-</span> : <span>+</span>}
         </button>
         <div class={`content-box ${this.toggle ? 'open' : 'close'}`}
           style={{ width: this.width }}

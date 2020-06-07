@@ -19,12 +19,15 @@ export class AppContainer implements ComponentInterface {
           contacts="contatti">
         </acme-navbar>
         <body-container></body-container>
+        <faq-wrap></faq-wrap>
         <acme-form></acme-form>
         <acme-footer
           headFiveOne="Azienda"
           headFiveTwo="Servizi"
           headFiveThree="Contatti">
         </acme-footer>
+
+
       </Host>
     )
   }

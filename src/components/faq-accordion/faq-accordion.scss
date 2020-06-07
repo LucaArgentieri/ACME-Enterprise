@@ -1,0 +1,34 @@
+.cont {
+  width: 100%; 
+}
+
+.accordion {
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 10px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: 0;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid #b9b7b7;
+  
+  transform: translateY(-10px);
+}
+
+span {
+  float: right;
+}
+
+.open {
+  height: 80px;
+  text-align: left;
+  transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.close {
+  opacity: 0;
+  height: 5px;
+  transition: .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}

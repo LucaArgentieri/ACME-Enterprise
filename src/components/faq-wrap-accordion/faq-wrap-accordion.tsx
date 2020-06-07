@@ -24,6 +24,12 @@ export class FaqWrapAccordion implements ComponentInterface {
              (purchases minus credits and returns) of at least $10 per year, 
             unless you joined during that calendar year.">
         </faq-accordion>
+        <faq-accordion width='100%' question='Does every member get an Annual Dividend?'
+          answer="Only active REI Co-op members receive an Annual Dividend notice. 
+            To be an active member, you need to make net merchandise or shipping purchases
+             (purchases minus credits and returns) of at least $10 per year, 
+            unless you joined during that calendar year.">
+        </faq-accordion>
 
       </Host>
     );

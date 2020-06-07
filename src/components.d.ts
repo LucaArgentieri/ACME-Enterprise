@@ -64,8 +64,6 @@ export namespace Components {
     }
     interface FaqWrapAccordion {
     }
-    interface FormProva {
-    }
     interface HamburgerBody {
         "contacts": string;
         "products": string;
@@ -170,12 +168,6 @@ declare global {
         prototype: HTMLFaqWrapAccordionElement;
         new (): HTMLFaqWrapAccordionElement;
     };
-    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
-    }
-    var HTMLFormProvaElement: {
-        prototype: HTMLFormProvaElement;
-        new (): HTMLFormProvaElement;
-    };
     interface HTMLHamburgerBodyElement extends Components.HamburgerBody, HTMLStencilElement {
     }
     var HTMLHamburgerBodyElement: {
@@ -215,7 +207,6 @@ declare global {
         "faq-text": HTMLFaqTextElement;
         "faq-wrap": HTMLFaqWrapElement;
         "faq-wrap-accordion": HTMLFaqWrapAccordionElement;
-        "form-prova": HTMLFormProvaElement;
         "hamburger-body": HTMLHamburgerBodyElement;
         "lower-bar": HTMLLowerBarElement;
         "text-box": HTMLTextBoxElement;
@@ -285,8 +276,6 @@ declare namespace LocalJSX {
     }
     interface FaqWrapAccordion {
     }
-    interface FormProva {
-    }
     interface HamburgerBody {
         "contacts"?: string;
         "products"?: string;
@@ -320,7 +309,6 @@ declare namespace LocalJSX {
         "faq-text": FaqText;
         "faq-wrap": FaqWrap;
         "faq-wrap-accordion": FaqWrapAccordion;
-        "form-prova": FormProva;
         "hamburger-body": HamburgerBody;
         "lower-bar": LowerBar;
         "text-box": TextBox;
@@ -345,7 +333,6 @@ declare module "@stencil/core" {
             "faq-text": LocalJSX.FaqText & JSXBase.HTMLAttributes<HTMLFaqTextElement>;
             "faq-wrap": LocalJSX.FaqWrap & JSXBase.HTMLAttributes<HTMLFaqWrapElement>;
             "faq-wrap-accordion": LocalJSX.FaqWrapAccordion & JSXBase.HTMLAttributes<HTMLFaqWrapAccordionElement>;
-            "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
             "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;

@@ -6,8 +6,11 @@ body {
   padding: 0px;
   box-sizing: border-box;
 }
+button:focus {
+  outline: none;
+}
 .main_box {
-  height: 100vh;
+  height: auto;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -53,21 +56,21 @@ body {
   text-align: center;
 }
 .container_button {
-  border: 2px solid white;
-  border-radius: 50px;
   color: white;
   font-family: $font-primary;
-  background-color: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
+  background: $secondary-color;
+  border-radius: 53px;
+  width: 200px;
 }
+
 .card_box {
   margin-top: 50px;
-  margin-bottom: 100px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -79,7 +82,6 @@ body {
   height: 380px;
   padding-bottom: 20px;
   border-radius: 20px;
-  border: 0.5px solid #C4C4C4;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -88,6 +90,7 @@ body {
   justify-content: flex-start;
   margin-left: 50px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .card h3 {
   margin-left: 50px;
@@ -101,18 +104,18 @@ body {
   height: 125px;
 }
 .card_button {
-  border: 2px solid $primary-color;
-  border-radius: 50px;
-  color: $primary-color;
+  color: white;
   font-family: $font-primary;
-  background-color: transparent;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 20px;
   cursor: pointer;
+  background: $primary-color;
+  border-radius: 53px;
+  width: 200px;
+  margin-top: 20px;
 }
 .card img {
   width: 80px;
@@ -150,11 +153,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media(max-width:1300px){
-  .img_box{
-    margin-top: 200px;
-  }
-}
 @media(max-width:1000px){
   .card1 {
     display: flex;
@@ -181,21 +179,17 @@ body {
     margin-top: 10px;
     margin-left: 20px;
   }
-  .img_box {
-    margin-top: 350px;
-  }
 }
 @media(max-width:630px){
-  .main_box {
-    margin-top: 900px;
-  }
   .img_box {
-    margin-top: 200px;
+    margin-top: 0px;
   }
   .card1 {
     display: block;
     flex-grow: initial;
     margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .card {
     width: 300px;

@@ -1,11 +1,20 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
+import { Component, ComponentInterface, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'acme-footer',
   styleUrl: 'acme-footer.scss',
   shadow: true,
+  assetsDirs: ['/assets'],
 })
 export class AcmeFooter implements ComponentInterface {
+  /** value of first h5 in the footer */
+  @Prop() headFiveOne: string
+
+  /** value of the second h5 in the footer */
+  @Prop() headFiveTwo: string
+
+  /** value of the last h5 in the footer */
+  @Prop() headFiveThree: string
 
 
   render() {
@@ -17,14 +26,14 @@ export class AcmeFooter implements ComponentInterface {
           </div>
 
           <div class="cont-social">
-            <img src="assets/facebook.svg" alt="logo facebook" />
+            <img src="assets/facebook2.svg" alt="logo facebook" />
             <img src="assets/twitter.svg" alt="logo twitter" />
             <img src="assets/linkedin.svg" alt="linkedin" />
           </div>
         </div>
 
         <div class="footer__section">
-          <h5>Azienda</h5>
+          <h5>{this.headFiveOne}</h5>
           <ul>
             <li>Chi siamo</li>
             <li>I nostri clienti</li>
@@ -35,7 +44,7 @@ export class AcmeFooter implements ComponentInterface {
         </div>
 
         <div class="footer__section">
-          <h5>Servizi</h5>
+          <h5>{this.headFiveTwo}</h5>
           <ul>
             <li>Assicurazioni</li>
             <li>Carte di credito</li>
@@ -46,7 +55,7 @@ export class AcmeFooter implements ComponentInterface {
         </div>
 
         <div class="footer__section">
-          <h5>Contatti</h5>
+          <h5>{this.headFiveThree}</h5>
           <ul>
             <li>Telefono: 800 600 500</li>
             <li>@acme.help.it</li>

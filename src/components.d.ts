@@ -9,6 +9,18 @@ export namespace Components {
     interface AcmeBanner {
     }
     interface AcmeFooter {
+        /**
+          * value of first h5 in the footer
+         */
+        "headFiveOne": string;
+        /**
+          * value of the last h5 in the footer
+         */
+        "headFiveThree": string;
+        /**
+          * value of the second h5 in the footer
+         */
+        "headFiveTwo": string;
     }
     interface AcmeForm {
     }
@@ -32,7 +44,25 @@ export namespace Components {
     }
     interface BodyContainer {
     }
-    interface FormProva {
+    interface FaqAccordion {
+        /**
+          * pass the content of faq answer from faq-wrap-acoordion
+         */
+        "answer": string;
+        /**
+          * pass the content of faq question from faq-wrap-acoordion
+         */
+        "question": string;
+        /**
+          * pass the width of faq-accordion
+         */
+        "width": string;
+    }
+    interface FaqText {
+    }
+    interface FaqWrap {
+    }
+    interface FaqWrapAccordion {
     }
     interface HamburgerBody {
         "contacts": string;
@@ -114,11 +144,29 @@ declare global {
         prototype: HTMLBodyContainerElement;
         new (): HTMLBodyContainerElement;
     };
-    interface HTMLFormProvaElement extends Components.FormProva, HTMLStencilElement {
+    interface HTMLFaqAccordionElement extends Components.FaqAccordion, HTMLStencilElement {
     }
-    var HTMLFormProvaElement: {
-        prototype: HTMLFormProvaElement;
-        new (): HTMLFormProvaElement;
+    var HTMLFaqAccordionElement: {
+        prototype: HTMLFaqAccordionElement;
+        new (): HTMLFaqAccordionElement;
+    };
+    interface HTMLFaqTextElement extends Components.FaqText, HTMLStencilElement {
+    }
+    var HTMLFaqTextElement: {
+        prototype: HTMLFaqTextElement;
+        new (): HTMLFaqTextElement;
+    };
+    interface HTMLFaqWrapElement extends Components.FaqWrap, HTMLStencilElement {
+    }
+    var HTMLFaqWrapElement: {
+        prototype: HTMLFaqWrapElement;
+        new (): HTMLFaqWrapElement;
+    };
+    interface HTMLFaqWrapAccordionElement extends Components.FaqWrapAccordion, HTMLStencilElement {
+    }
+    var HTMLFaqWrapAccordionElement: {
+        prototype: HTMLFaqWrapAccordionElement;
+        new (): HTMLFaqWrapAccordionElement;
     };
     interface HTMLHamburgerBodyElement extends Components.HamburgerBody, HTMLStencilElement {
     }
@@ -155,7 +203,10 @@ declare global {
         "body-box": HTMLBodyBoxElement;
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
-        "form-prova": HTMLFormProvaElement;
+        "faq-accordion": HTMLFaqAccordionElement;
+        "faq-text": HTMLFaqTextElement;
+        "faq-wrap": HTMLFaqWrapElement;
+        "faq-wrap-accordion": HTMLFaqWrapAccordionElement;
         "hamburger-body": HTMLHamburgerBodyElement;
         "lower-bar": HTMLLowerBarElement;
         "text-box": HTMLTextBoxElement;
@@ -166,6 +217,18 @@ declare namespace LocalJSX {
     interface AcmeBanner {
     }
     interface AcmeFooter {
+        /**
+          * value of first h5 in the footer
+         */
+        "headFiveOne"?: string;
+        /**
+          * value of the last h5 in the footer
+         */
+        "headFiveThree"?: string;
+        /**
+          * value of the second h5 in the footer
+         */
+        "headFiveTwo"?: string;
     }
     interface AcmeForm {
     }
@@ -189,7 +252,29 @@ declare namespace LocalJSX {
     }
     interface BodyContainer {
     }
-    interface FormProva {
+    interface FaqAccordion {
+        /**
+          * pass the content of faq answer from faq-wrap-acoordion
+         */
+        "answer"?: string;
+        /**
+          * event of toggle accordion
+         */
+        "onOnToggle"?: (event: CustomEvent<any>) => void;
+        /**
+          * pass the content of faq question from faq-wrap-acoordion
+         */
+        "question"?: string;
+        /**
+          * pass the width of faq-accordion
+         */
+        "width"?: string;
+    }
+    interface FaqText {
+    }
+    interface FaqWrap {
+    }
+    interface FaqWrapAccordion {
     }
     interface HamburgerBody {
         "contacts"?: string;
@@ -220,7 +305,10 @@ declare namespace LocalJSX {
         "body-box": BodyBox;
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
-        "form-prova": FormProva;
+        "faq-accordion": FaqAccordion;
+        "faq-text": FaqText;
+        "faq-wrap": FaqWrap;
+        "faq-wrap-accordion": FaqWrapAccordion;
         "hamburger-body": HamburgerBody;
         "lower-bar": LowerBar;
         "text-box": TextBox;
@@ -241,7 +329,10 @@ declare module "@stencil/core" {
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
-            "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
+            "faq-accordion": LocalJSX.FaqAccordion & JSXBase.HTMLAttributes<HTMLFaqAccordionElement>;
+            "faq-text": LocalJSX.FaqText & JSXBase.HTMLAttributes<HTMLFaqTextElement>;
+            "faq-wrap": LocalJSX.FaqWrap & JSXBase.HTMLAttributes<HTMLFaqWrapElement>;
+            "faq-wrap-accordion": LocalJSX.FaqWrapAccordion & JSXBase.HTMLAttributes<HTMLFaqWrapAccordionElement>;
             "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;

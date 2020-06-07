@@ -51,8 +51,9 @@ export class AcmeForm implements ComponentInterface {
                   value={this.nome}
                   type='text'
                   id='name'
-                  placeholder='nome'
+                  placeholder='Nome'
                   onInput={(e) => this.handleName(e)}
+                  required
                 />
               </label>
 
@@ -65,6 +66,7 @@ export class AcmeForm implements ComponentInterface {
                   id='surname'
                   placeholder='Cognome'
                   onInput={(event) => this.handleSurname(event)}
+                  required
                 />
               </label>
             </p>
@@ -76,6 +78,7 @@ export class AcmeForm implements ComponentInterface {
                   id='number'
                   placeholder='Numero'
                   onInput={(event) => this.handleNumber(event)}
+                  required
                 />
               </label>
             </p>
@@ -87,7 +90,7 @@ export class AcmeForm implements ComponentInterface {
                   type='text'
                   id='email'
                   placeholder='Email'
-
+                  required
                 />
               </label>
             </p>

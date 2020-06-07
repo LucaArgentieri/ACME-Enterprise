@@ -12,6 +12,8 @@ export namespace Components {
     }
     interface AcmeForm {
     }
+    interface AcmeHamburger {
+    }
     interface AcmeNavbar {
         "contacts": string;
         "phone": string;
@@ -31,6 +33,12 @@ export namespace Components {
     interface BodyContainer {
     }
     interface FormProva {
+    }
+    interface HamburgerBody {
+        "contacts": string;
+        "products": string;
+        "services": string;
+        "who": string;
     }
     interface LowerBar {
         "contacts": string;
@@ -63,6 +71,12 @@ declare global {
     var HTMLAcmeFormElement: {
         prototype: HTMLAcmeFormElement;
         new (): HTMLAcmeFormElement;
+    };
+    interface HTMLAcmeHamburgerElement extends Components.AcmeHamburger, HTMLStencilElement {
+    }
+    var HTMLAcmeHamburgerElement: {
+        prototype: HTMLAcmeHamburgerElement;
+        new (): HTMLAcmeHamburgerElement;
     };
     interface HTMLAcmeNavbarElement extends Components.AcmeNavbar, HTMLStencilElement {
     }
@@ -106,6 +120,12 @@ declare global {
         prototype: HTMLFormProvaElement;
         new (): HTMLFormProvaElement;
     };
+    interface HTMLHamburgerBodyElement extends Components.HamburgerBody, HTMLStencilElement {
+    }
+    var HTMLHamburgerBodyElement: {
+        prototype: HTMLHamburgerBodyElement;
+        new (): HTMLHamburgerBodyElement;
+    };
     interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
     }
     var HTMLLowerBarElement: {
@@ -128,6 +148,7 @@ declare global {
         "acme-banner": HTMLAcmeBannerElement;
         "acme-footer": HTMLAcmeFooterElement;
         "acme-form": HTMLAcmeFormElement;
+        "acme-hamburger": HTMLAcmeHamburgerElement;
         "acme-navbar": HTMLAcmeNavbarElement;
         "app-container": HTMLAppContainerElement;
         "bg-form": HTMLBgFormElement;
@@ -135,6 +156,7 @@ declare global {
         "body-box2": HTMLBodyBox2Element;
         "body-container": HTMLBodyContainerElement;
         "form-prova": HTMLFormProvaElement;
+        "hamburger-body": HTMLHamburgerBodyElement;
         "lower-bar": HTMLLowerBarElement;
         "text-box": HTMLTextBoxElement;
         "upper-bar": HTMLUpperBarElement;
@@ -146,6 +168,8 @@ declare namespace LocalJSX {
     interface AcmeFooter {
     }
     interface AcmeForm {
+    }
+    interface AcmeHamburger {
     }
     interface AcmeNavbar {
         "contacts"?: string;
@@ -167,6 +191,12 @@ declare namespace LocalJSX {
     }
     interface FormProva {
     }
+    interface HamburgerBody {
+        "contacts"?: string;
+        "products"?: string;
+        "services"?: string;
+        "who"?: string;
+    }
     interface LowerBar {
         "contacts"?: string;
         "products"?: string;
@@ -183,6 +213,7 @@ declare namespace LocalJSX {
         "acme-banner": AcmeBanner;
         "acme-footer": AcmeFooter;
         "acme-form": AcmeForm;
+        "acme-hamburger": AcmeHamburger;
         "acme-navbar": AcmeNavbar;
         "app-container": AppContainer;
         "bg-form": BgForm;
@@ -190,6 +221,7 @@ declare namespace LocalJSX {
         "body-box2": BodyBox2;
         "body-container": BodyContainer;
         "form-prova": FormProva;
+        "hamburger-body": HamburgerBody;
         "lower-bar": LowerBar;
         "text-box": TextBox;
         "upper-bar": UpperBar;
@@ -202,6 +234,7 @@ declare module "@stencil/core" {
             "acme-banner": LocalJSX.AcmeBanner & JSXBase.HTMLAttributes<HTMLAcmeBannerElement>;
             "acme-footer": LocalJSX.AcmeFooter & JSXBase.HTMLAttributes<HTMLAcmeFooterElement>;
             "acme-form": LocalJSX.AcmeForm & JSXBase.HTMLAttributes<HTMLAcmeFormElement>;
+            "acme-hamburger": LocalJSX.AcmeHamburger & JSXBase.HTMLAttributes<HTMLAcmeHamburgerElement>;
             "acme-navbar": LocalJSX.AcmeNavbar & JSXBase.HTMLAttributes<HTMLAcmeNavbarElement>;
             "app-container": LocalJSX.AppContainer & JSXBase.HTMLAttributes<HTMLAppContainerElement>;
             "bg-form": LocalJSX.BgForm & JSXBase.HTMLAttributes<HTMLBgFormElement>;
@@ -209,6 +242,7 @@ declare module "@stencil/core" {
             "body-box2": LocalJSX.BodyBox2 & JSXBase.HTMLAttributes<HTMLBodyBox2Element>;
             "body-container": LocalJSX.BodyContainer & JSXBase.HTMLAttributes<HTMLBodyContainerElement>;
             "form-prova": LocalJSX.FormProva & JSXBase.HTMLAttributes<HTMLFormProvaElement>;
+            "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
             "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
             "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;

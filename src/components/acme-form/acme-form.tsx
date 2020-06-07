@@ -87,7 +87,7 @@ export class AcmeForm implements ComponentInterface {
               <label>
 
                 <input
-                  type='text'
+                  type='email'
                   id='email'
                   placeholder='Email'
                   required

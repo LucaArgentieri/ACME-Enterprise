@@ -51,16 +51,25 @@ input {
     background-color: $primary-color;
     border: 0;
     border-bottom: 2px solid #fff;
-    color: #fff;
+    color: $secondary-color;
 
     &::placeholder {
-      color: $secondary-color;
+      color: #fff;
     }
 
     &:focus {
       background-color: rgba(236, 236, 233, 0.2);
       border-bottom: 2px solid $secondary-color;
       outline: 0;
+  }
+
+  &:required:invalid {
+    border-bottom: 2px solid #fff;
+    color: $secondary-color;
+  }
+
+  &:required:valid {
+      border-color: 2px solid $secondary-color;
   }
 }
 

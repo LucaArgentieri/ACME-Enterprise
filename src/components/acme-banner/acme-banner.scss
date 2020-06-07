@@ -8,7 +8,7 @@
   font-family: $primary-font;
   color: white;
   padding-top: 70px;
-  padding-left: 80px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -40,9 +40,33 @@ button {
   .banner {
     height: 86vh;
   }
+  .promotional_text {
+    padding-top: 100px;
+  }
 }
 @media (max-width: 700px) {
   .secondary_text {
     display: none;
+  }
+  button {
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 484px) {
+  .promotional_text {
+    padding-top: 120px;
+  }
+  .primary_text {
+    font-size: 35px;
+  }
+}
+@media (max-width: 375px) {
+  .promotional_text {
+    padding: 15px;
+    padding-top: 180px;
+  }
+  .primary_text {
+    font-size: 35px;
   }
 }

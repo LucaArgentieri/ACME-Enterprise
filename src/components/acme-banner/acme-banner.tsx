@@ -67,7 +67,7 @@ export class AcmeBanner implements ComponentInterface {
     return <div class="banner">
         <upper-bar tagline={this.tagline} phone={this.phone}></upper-bar>
         <lower-bar who={this.who} products={this.products} services={this.services} contacts={this.contacts}></lower-bar>
-      <div class="promotional_text"><p class="primary_text"><span class="colored">Soluzioni finanziarie</span> per<br/> far fronte alla crisi<br/> COVID-19</p><p class="secondary_text">Finanziamenti digitali su misura che semplificano <br/>l'accesso al credito e la gestione della liquidità.<br/>Meno burocrazia, più opportunità.</p><button>Scopri di più</button></div> 
+      <div class="promotional_text"><p class="primary_text"><span class="colored">Soluzioni finanziarie</span> per far fronte <br/> alla crisi COVID-19</p><p class="secondary_text">Finanziamenti digitali su misura che semplificano <br/>l'accesso al credito e la gestione della liquidità.<br/>Meno burocrazia, più opportunità.</p><button>Scopri di più</button></div> 
     </div>
 
   }

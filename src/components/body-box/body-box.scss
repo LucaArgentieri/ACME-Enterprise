@@ -9,6 +9,10 @@ body {
 button:focus {
   outline: none;
 }
+button:hover {
+  transition: all .2s;
+  opacity: .8;
+}
 .main_box {
   height: auto;
   display: flex;

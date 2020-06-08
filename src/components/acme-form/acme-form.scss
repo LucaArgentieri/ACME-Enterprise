@@ -86,14 +86,17 @@ textarea {
 }
 
 button {
-    background-color: $secondary-color;
-    color: #fff;
-    border-radius: 100px;
-    cursor: pointer;
-    width: 120px;
-    text-align: center;
-    padding: .5rem;
-    border: 0;
+  color: white;
+  font-family: "Poppins";
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background: #12A6E6;
+  border-radius: 53px;
+  width: 200px;
     transition: all .2s;
 
     &:hover {
@@ -109,6 +112,7 @@ input,
 textarea {
     padding: .2rem;
     text-align: left;
+    font-family: $font-primary;
 }
 
 @media (max-width: 768px) {

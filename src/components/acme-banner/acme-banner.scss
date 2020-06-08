@@ -40,7 +40,10 @@ button {
   border-radius: 53px;
   width: 200px;
 }
-
+button:hover {
+  transition: all .2s;
+  opacity: .8;
+}
 
 
 

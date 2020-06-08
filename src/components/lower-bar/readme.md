@@ -21,9 +21,16 @@
 
  - [acme-navbar](../acme-navbar)
 
+### Depends on
+
+- [acme-hamburger](../acme-hamburger)
+- [hamburger-body](../hamburger-body)
+
 ### Graph
 ```mermaid
 graph TD;
+  lower-bar --> acme-hamburger
+  lower-bar --> hamburger-body
   acme-navbar --> lower-bar
   style lower-bar fill:#f9f,stroke:#333,stroke-width:4px
 ```

@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, getAssetPath, State } from '@stencil/core';
+import { Component, ComponentInterface, h, getAssetPath } from '@stencil/core';
 
 @Component({
   tag: 'acme-form',
@@ -13,29 +13,6 @@ export class AcmeForm implements ComponentInterface {
     backgroundImage: `url("${getAssetPath('/assets/acme-building-1.jpeg')}")`,
   };
 
-  @State() nome: string;
-  @State() cognome: string;
-  @State() numero: string;
-
-  private handleSubmit(e) {
-    e.preventDefault();
-
-    console.log(this.nome, this.cognome, this.numero);
-  }
-
-  private handleName(e) {
-    this.nome = e.target.value;
-  }
-
-  private handleSurname(event) {
-    this.cognome = event.target.value;
-  }
-
-  private handleNumber(event) {
-    this.numero = event.target.value;
-  }
-
-
   render() {
     return (
       <div class='wrapper'>
@@ -43,20 +20,17 @@ export class AcmeForm implements ComponentInterface {
 
         <div class='form_inputs'>
           <h4>Contattaci</h4>
-          <form id='form' class='form' onSubmit={(e) => this.handleSubmit(e)}>
+          <form id='form' class='form'>
 
             <p class='form_control'>
               <label>
                 <input
-                  value={this.nome}
                   type='text'
                   id='name'
                   placeholder='Nome'
-                  onInput={(e) => this.handleName(e)}
                   required
                 />
               </label>
-
             </p>
 
             <p class='form_control'>
@@ -65,7 +39,6 @@ export class AcmeForm implements ComponentInterface {
                   type='text'
                   id='surname'
                   placeholder='Cognome'
-                  onInput={(event) => this.handleSurname(event)}
                   required
                 />
               </label>
@@ -77,7 +50,6 @@ export class AcmeForm implements ComponentInterface {
                   type='text'
                   id='number'
                   placeholder='Numero'
-                  onInput={(event) => this.handleNumber(event)}
                   required
                 />
               </label>
@@ -102,7 +74,6 @@ export class AcmeForm implements ComponentInterface {
             </p>
             <button type="submit" >INVIA</button>
           </form>
-
         </div>
       </div>
     );

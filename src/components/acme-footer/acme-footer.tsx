@@ -26,9 +26,9 @@ export class AcmeFooter implements ComponentInterface {
           </div>
 
           <div class="cont-social">
-            <img src="assets/facebook2.svg" alt="logo facebook" />
-            <img src="assets/twitter.svg" alt="logo twitter" />
-            <img src="assets/linkedin.svg" alt="linkedin" />
+            <img src="assets/fbcolor.svg" alt="logo facebook" />
+            <img src="assets/twitcolor.svg" alt="logo twitter" />
+            <img src="assets/linkedincolor.svg" alt="linkedin" />
           </div>
         </div>
 

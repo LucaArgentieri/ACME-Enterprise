@@ -1,6 +1,7 @@
 .footer{ 
   font-family: $font-primary;
-  margin-top: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
    text-align: center;
    width: 100%;
    display: grid;
@@ -16,22 +17,21 @@
 
     &--icons {
       cursor: pointer;
-
+      
       .logo-acme {
         margin-left: 25px;
 
         img {        
           width: 100%;
           height: 50px;
-          
         }
       }
     }
     .cont-social {
       padding-top: 20px;
       img { 
-        width: 40px;
-        height: auto;
+        width: 45px;
+        height: 45px;
         padding: 8px;
       }
     }

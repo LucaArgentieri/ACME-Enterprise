@@ -24,17 +24,17 @@
   color: $secondary-color;
 }
 button {
-  width: 150px;
-  height: 50px;
-  border-radius: 30px;
-  background-color: transparent;
-  outline: none;
-  border: 2px solid white;
-  margin-top: 30px;
   color: white;
+  font-family: $font-primary;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 20px;
-  margin-left: 150px;
   cursor: pointer;
+  background: $secondary-color;
+  border-radius: 53px;
+  width: 200px;
 }
 @media (max-width: 820px) {
   .banner {

@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h } from '@stencil/core';
+import { Component, ComponentInterface, h, Prop} from '@stencil/core';
 
 @Component({
   tag: 'acme-banner',
@@ -7,6 +7,13 @@ import { Component, ComponentInterface, h } from '@stencil/core';
   assetsDirs: ["/assets"],
 })
 export class AcmeBanner implements ComponentInterface {
+
+  @Prop() tagline: string;
+  @Prop() phone: string;
+  @Prop() who: string;
+  @Prop() products: string;
+  @Prop() contacts: string;
+  @Prop() services: string;
 
   /*@State() divs_1: HTMLAcmeBannerElement[] = [];
   @State() divs_2: HTMLAcmeBannerElement[] = [];
@@ -58,12 +65,9 @@ export class AcmeBanner implements ComponentInterface {
 
   render() {
     return <div class="banner">
-      <div class="promotional_text">
-        <p class="primary_text">
-          <span class="colored">Soluzioni finanziarie</span> per<br /> far fronte alla crisi<br /> COVID-19</p>
-        <p class="secondary_text">Finanziamenti digitali su misura che semplificano <br />l'accesso al credito e la gestione della liquidità.<br />Meno burocrazia, più opportunità.</p>
-        <button>Scopri di più</button>
-      </div>
+        <upper-bar tagline={this.tagline} phone={this.phone}></upper-bar>
+        <lower-bar who={this.who} products={this.products} services={this.services} contacts={this.contacts}></lower-bar>
+      <div class="promotional_text"><p class="primary_text"><span class="colored">Soluzioni finanziarie</span> per<br/> far fronte alla crisi<br/> COVID-19</p><p class="secondary_text">Finanziamenti digitali su misura che semplificano <br/>l'accesso al credito e la gestione della liquidità.<br/>Meno burocrazia, più opportunità.</p><button>Scopri di più</button></div> 
     </div>
 
   }

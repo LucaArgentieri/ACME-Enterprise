@@ -16,7 +16,7 @@ export class LowerBar implements ComponentInterface {
     return <div class="lower">
       <img src="/assets/logo.svg" alt="logo acme"/>
       <acme-hamburger></acme-hamburger>
-      <hamburger-body class="hidden" who={this.who.toUpperCase()} products={this.products.toUpperCase()} services={this.services.toUpperCase()} contacts={this.contacts.toUpperCase()}></hamburger-body>
+      <hamburger-body class="hidden" who={this.who} products={this.products} services={this.services} contacts={this.contacts}></hamburger-body>
       <div class="lower_links">
         <a href="#">{this.who}</a>
         <a href="#">{this.products}</a>

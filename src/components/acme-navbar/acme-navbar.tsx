@@ -17,9 +17,7 @@ export class AcmeNavbar implements ComponentInterface {
   render() {
     return (
       <Host>
-        <upper-bar tagline={this.tagline} phone={this.phone}></upper-bar>
-        <lower-bar who={this.who.toUpperCase()} products={this.products.toUpperCase()} services={this.services.toUpperCase()} contacts={this.contacts.toUpperCase()}></lower-bar>
-        <acme-banner></acme-banner>
+        <acme-banner tagline={this.tagline} phone={this.phone} who={this.who.toLocaleUpperCase()} products={this.products.toLocaleUpperCase()} services={this.services.toLocaleUpperCase()} contacts={this.contacts.toLocaleUpperCase()}></acme-banner>
       </Host>
     );
   }

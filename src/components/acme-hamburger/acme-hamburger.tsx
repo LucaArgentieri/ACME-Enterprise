@@ -12,7 +12,7 @@ export class AcmeHamburger implements ComponentInterface {
 
   componentDidLoad() {
     this.button = this.el.shadowRoot.querySelector('.button');
-    this.menu = document.querySelector('acme-navbar').shadowRoot.querySelector('lower-bar').shadowRoot.querySelector('hamburger-body');
+    this.menu = document.querySelector('acme-navbar').shadowRoot.querySelector('acme-banner').shadowRoot.querySelector('lower-bar').shadowRoot.querySelector('hamburger-body');
     console.log(this.menu);
   }
   // eslint-disable-next-line @stencil/prefer-vdom-listener

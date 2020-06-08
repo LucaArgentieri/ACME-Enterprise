@@ -17,7 +17,7 @@ export class FaqAccordion implements ComponentInterface {
   /** pass the width of faq-accordion */
   @Prop() width: string;
 
-  private toggleComponent() {
+  private toggleComponent = () => {
     this.toggle = !this.toggle;
     this.onToggle.emit({ visible: this.toggle });
   }
@@ -27,7 +27,7 @@ export class FaqAccordion implements ComponentInterface {
       <div class="container">
         <button class='accordion'
           style={{ width: this.width }}
-          onClick={() => this.toggleComponent()}
+          onClick={this.toggleComponent}
         >
           {this.question}
           {this.toggle ? <span>-</span> : <span>+</span>}

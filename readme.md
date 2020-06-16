@@ -22,3 +22,6 @@ Colors:
 Primary: #02336E / 
 Secondary: #12A6E6 / 
 Font: [Google Font: Poppins](https://fonts.googleapis.com/css2family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap)
+
+## Frameworks & libraries
+- [Stencil Js](https://stenciljs.com/)

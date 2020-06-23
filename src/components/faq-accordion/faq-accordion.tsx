@@ -8,8 +8,8 @@ import { Component, ComponentInterface, h, State, EventEmitter, Event, Prop } fr
 export class FaqAccordion implements ComponentInterface {
   /** handle the state of accordion open/close */
   @State() toggle: boolean = false;
-  /**  event of toggle accordion */
-  @Event() onToggle: EventEmitter;
+  /**  event of toggle event emitter */
+  @Event() myToggle: EventEmitter;
   /** pass the content of faq question from faq-wrap-acoordion */
   @Prop() question: string;
   /** pass the content of faq answer from faq-wrap-acoordion */
@@ -19,7 +19,7 @@ export class FaqAccordion implements ComponentInterface {
 
   private toggleComponent = () => {
     this.toggle = !this.toggle;
-    this.onToggle.emit({ visible: this.toggle });
+    this.myToggle.emit({ visible: this.toggle });
   }
 
   render() {

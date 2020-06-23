@@ -258,9 +258,9 @@ declare namespace LocalJSX {
          */
         "answer"?: string;
         /**
-          * event of toggle accordion
+          * event of toggle event emitter
          */
-        "onOnToggle"?: (event: CustomEvent<any>) => void;
+        "onMyToggle"?: (event: CustomEvent<any>) => void;
         /**
           * pass the content of faq question from faq-wrap-acoordion
          */

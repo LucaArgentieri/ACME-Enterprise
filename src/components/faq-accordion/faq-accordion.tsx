@@ -8,7 +8,11 @@ import { Component, ComponentInterface, h, State, EventEmitter, Event, Prop } fr
 export class FaqAccordion implements ComponentInterface {
   /** handle the state of accordion open/close */
   @State() toggle: boolean = false;
+<<<<<<< HEAD
   /**  event of toggle event emitter */
+=======
+  /**  event of toggle accordion */
+>>>>>>> develop
   @Event() myToggle: EventEmitter;
   /** pass the content of faq question from faq-wrap-acoordion */
   @Prop() question: string;

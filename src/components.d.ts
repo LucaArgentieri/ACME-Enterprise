@@ -7,6 +7,12 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AcmeBanner {
+        "contacts": string;
+        "phone": string;
+        "products": string;
+        "services": string;
+        "tagline": string;
+        "who": string;
     }
     interface AcmeFooter {
         /**
@@ -215,6 +221,12 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AcmeBanner {
+        "contacts"?: string;
+        "phone"?: string;
+        "products"?: string;
+        "services"?: string;
+        "tagline"?: string;
+        "who"?: string;
     }
     interface AcmeFooter {
         /**

@@ -27,7 +27,7 @@ export class FaqWrapAccordion implements ComponentInterface {
         >
         </faq-accordion>
         <faq-accordion width='100%' question='Devo denunciare un sinistro, come posso fare?'
-          answer="Accedi al sito ilmiosinistro.it dove potrai effettuare la tua denuncia online. 
+          answer="Accedi all' area acme/denuncia-online.it dove potrai effettuare la tua denuncia online. 
           Troverai anche tutti i dettagli per portare a termine la denuncia."
         >
         </faq-accordion>

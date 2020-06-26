@@ -69,7 +69,7 @@ export class AcmeForm implements ComponentInterface {
 
             <p class='full-width'>
               <label>
-                <textarea id='message' placeholder='inserisci un messaggio'></textarea>
+                <textarea id='message' placeholder='Inserisci un messaggio'></textarea>
               </label>
             </p>
             <button type="submit" >INVIA</button>

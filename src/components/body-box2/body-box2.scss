@@ -9,6 +9,10 @@ body {
 button:focus {
   outline: none;
 }
+button:hover {
+  transition: all .2s;
+  opacity: .8;
+}
 .main_box {
   height: auto;
   display: flex;
@@ -180,7 +184,7 @@ button:focus {
     margin-left: 20px;
   }
 }
-@media(max-width:630px){
+@media(max-width:600px){
   .img_box {
     margin-top: 0px;
   }
@@ -192,7 +196,7 @@ button:focus {
     margin-right: 0px;
   }
   .card {
-    width: 300px;
+    width: 350px;
     margin-bottom: 50px;
   }
   .container_info h1 {

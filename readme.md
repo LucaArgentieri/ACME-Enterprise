@@ -16,9 +16,17 @@ Occorrerà utilizzare le regole di stile definite nel file styles e utilizzare t
 
 Occorrerà mettere enfasi, per esempio con sezioni apposite, sul core business della società (servizi finanziari e assicurativi) e sulla clientela a cui fa riferimento (aziende e privati). Queste risultano infatti le sezioni più importanti della landing page.
 
+## Mockup
+
+- [Figma Project](https://www.figma.com/file/TJ8inXUCPNhiYrBLtg6kNu/ACME_STENCIL?node-id=0%3A1
+)
+
 ## Style
 
 Colors:
 Primary: #02336E / 
 Secondary: #12A6E6 / 
 Font: [Google Font: Poppins](https://fonts.googleapis.com/css2family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap)
+
+## Frameworks & libraries
+- [Stencil Js](https://stenciljs.com/)

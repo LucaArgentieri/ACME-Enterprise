@@ -3,8 +3,8 @@
   grid-template-columns: 1fr 2fr;
   font-family: $font-primary;
   font-size: 20px;
-  height: 14vh;
   position: relative;
+  background-color: white;
 }
 img {
   padding: 10px 0px;
@@ -14,7 +14,7 @@ img {
 }
 .lower_links {
   background-color: $secondary-color;
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 7% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 7% 101%);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -79,5 +79,13 @@ hamburger-body {
   img {
     padding: 10px 15px;
     width: 200px;
+  }
+}
+@media (min-width: 1500px) {
+  .lower {
+    font-size: 25px;
+  }
+  img {
+    width: 500px;
   }
 }

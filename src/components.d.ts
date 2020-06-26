@@ -40,6 +40,8 @@ export namespace Components {
         "tagline": string;
         "who": string;
     }
+    interface AcmeNews {
+    }
     interface AppContainer {
     }
     interface BgForm {
@@ -119,6 +121,12 @@ declare global {
     var HTMLAcmeNavbarElement: {
         prototype: HTMLAcmeNavbarElement;
         new (): HTMLAcmeNavbarElement;
+    };
+    interface HTMLAcmeNewsElement extends Components.AcmeNews, HTMLStencilElement {
+    }
+    var HTMLAcmeNewsElement: {
+        prototype: HTMLAcmeNewsElement;
+        new (): HTMLAcmeNewsElement;
     };
     interface HTMLAppContainerElement extends Components.AppContainer, HTMLStencilElement {
     }
@@ -204,6 +212,7 @@ declare global {
         "acme-form": HTMLAcmeFormElement;
         "acme-hamburger": HTMLAcmeHamburgerElement;
         "acme-navbar": HTMLAcmeNavbarElement;
+        "acme-news": HTMLAcmeNewsElement;
         "app-container": HTMLAppContainerElement;
         "bg-form": HTMLBgFormElement;
         "body-box": HTMLBodyBoxElement;
@@ -254,6 +263,8 @@ declare namespace LocalJSX {
         "tagline"?: string;
         "who"?: string;
     }
+    interface AcmeNews {
+    }
     interface AppContainer {
     }
     interface BgForm {
@@ -270,7 +281,7 @@ declare namespace LocalJSX {
          */
         "answer"?: string;
         /**
-          * event of toggle event emitter
+          * event of toggle accordion
          */
         "onMyToggle"?: (event: CustomEvent<any>) => void;
         /**
@@ -312,6 +323,7 @@ declare namespace LocalJSX {
         "acme-form": AcmeForm;
         "acme-hamburger": AcmeHamburger;
         "acme-navbar": AcmeNavbar;
+        "acme-news": AcmeNews;
         "app-container": AppContainer;
         "bg-form": BgForm;
         "body-box": BodyBox;
@@ -336,6 +348,7 @@ declare module "@stencil/core" {
             "acme-form": LocalJSX.AcmeForm & JSXBase.HTMLAttributes<HTMLAcmeFormElement>;
             "acme-hamburger": LocalJSX.AcmeHamburger & JSXBase.HTMLAttributes<HTMLAcmeHamburgerElement>;
             "acme-navbar": LocalJSX.AcmeNavbar & JSXBase.HTMLAttributes<HTMLAcmeNavbarElement>;
+            "acme-news": LocalJSX.AcmeNews & JSXBase.HTMLAttributes<HTMLAcmeNewsElement>;
             "app-container": LocalJSX.AppContainer & JSXBase.HTMLAttributes<HTMLAppContainerElement>;
             "bg-form": LocalJSX.BgForm & JSXBase.HTMLAttributes<HTMLBgFormElement>;
             "body-box": LocalJSX.BodyBox & JSXBase.HTMLAttributes<HTMLBodyBoxElement>;

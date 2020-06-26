@@ -11,7 +11,6 @@ export class AcmeNews implements ComponentInterface {
   @State() limit = 3;
   @State() page = 1;
 
-  // call first 3 news items without push the botton
   componentDidLoad() {
     this.fetchData();
   }
@@ -41,7 +40,7 @@ export class AcmeNews implements ComponentInterface {
             </div>
           </div>
         )}
-        <button class='fetch-button' onClick={this.fetchData}>mostra altri</button>
+        <button class='fetch-button' onClick={this.fetchData}>Mostra altri</button>
       </Host>
     );
   }

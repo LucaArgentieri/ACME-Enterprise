@@ -3,9 +3,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: $primary-color;
-  margin-left: 75px;
-  margin-right: 75px;
+  margin:150px 75px;
   font-family: $font-primary;
+  
 }
 
 .wrapper>* {

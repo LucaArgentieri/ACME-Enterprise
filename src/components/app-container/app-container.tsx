@@ -20,6 +20,7 @@ export class AppContainer implements ComponentInterface {
         </acme-navbar>
         <body-container></body-container>
         <faq-wrap></faq-wrap>
+        <acme-news></acme-news>
         <acme-form></acme-form>
         <acme-footer
           headFiveOne="Azienda"

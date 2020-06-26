@@ -29,12 +29,13 @@ export class AcmeNews implements ComponentInterface {
   render() {
     return (
       <Host>
+        <h2>News</h2>
         {this.news.map(news =>
           <div>
             <div class='post'>
               <div class='number'>{news.id}</div>
               <div class='post-info'>
-                <h2 class='post-title'>{news.title}</h2>
+                <h3 class='post-title'>{news.title}</h3>
                 <p class='post-body'>{news.body}</p>
               </div>
             </div>

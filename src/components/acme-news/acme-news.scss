@@ -1,5 +1,15 @@
-button {
-  position: absolute;
+:host {
+  padding-bottom: 150px;
+}
+h2 {
+  font-size: 32px;
+  font-family: $font-primary;
+  color:$secondary-color;
+  text-align: center;
+}
+
+button.fetch-button {
+  position: relative;
   text-align: center;
   left: 50%;
   width: 100px;
@@ -12,7 +22,12 @@ button {
   background: $primary-color;
   border-radius: 20px;
   width: 150px;
-  margin: 20px 0;
+  margin: 40px 0;
+  align-items: center;
+
+  &:hover {
+    opacity: .9;
+  }
 }
 
 .post {
@@ -21,15 +36,15 @@ button {
   background-color: $primary-color;
   color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  padding: 20px;
-  margin: 40px 0;
+  border-radius: 20px;
+  padding: 30px;
+  margin: 50px 0;
   display: flex;
   width: 80vw;
   max-width: 800px;
   margin: 30px 25%;
 
-  h2.post-title {
+  h3.post-title {
     font-size: 21px;
     text-align: center;
     margin: 0;

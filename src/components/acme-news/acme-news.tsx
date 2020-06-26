@@ -31,7 +31,7 @@ export class AcmeNews implements ComponentInterface {
       <Host>
         <h2>News</h2>
         {this.news.map(news =>
-          <div>
+          <div class='news-container'>
             <div class='post'>
               <div class='number'>{news.id}</div>
               <div class='post-info'>

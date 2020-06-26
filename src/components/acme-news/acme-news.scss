@@ -1,5 +1,12 @@
+
 :host {
-  padding-bottom: 150px;
+  padding-bottom: 150px;  
+}
+
+.news-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 h2 {
   font-size: 32px;
@@ -9,9 +16,8 @@ h2 {
 }
 
 button.fetch-button {
-  position: relative;
-  text-align: center;
-  left: 50%;
+  position: absolute;
+  left: 46%;
   width: 100px;
 
   color: white;
@@ -22,8 +28,7 @@ button.fetch-button {
   background: $primary-color;
   border-radius: 20px;
   width: 150px;
-  margin: 40px 0;
-  align-items: center;
+  //margin: 40px 0;
 
   &:hover {
     opacity: .9;
@@ -38,11 +43,13 @@ button.fetch-button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 30px;
-  margin: 50px 0;
-  display: flex;
+  //display: flex;
   width: 80vw;
   max-width: 800px;
-  margin: 30px 25%;
+  margin: 20px 25%;
+  text-align: center;
+
+  //@media(max-width:864px){}
 
   h3.post-title {
     font-size: 21px;
@@ -77,6 +84,9 @@ button.fetch-button {
   }
 
 }
+
+
+
 
 
 

@@ -1,18 +1,31 @@
 
 :host {
-  padding-bottom: 150px;  
+  padding-bottom: 150px; 
+
 }
 
 .news-container {
   display: flex;
   flex-direction: row;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 h2 {
   font-size: 32px;
   font-family: $font-primary;
   color:$secondary-color;
   text-align: center;
+
+  @media(max-width:1000px){
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media(max-width:768px){
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
 }
 
 button.fetch-button {
@@ -28,10 +41,22 @@ button.fetch-button {
   background: $primary-color;
   border-radius: 20px;
   width: 150px;
-  //margin: 40px 0;
+  margin-top: 25px;
 
   &:hover {
     opacity: .9;
+  }
+
+  @media(max-width:375px){
+    left:40%;
+  }
+
+  @media(max-width:768px){
+    left:42%;
+  }
+
+  @media(max-width:414px){
+    left:32%;
   }
 }
 
@@ -43,23 +68,34 @@ button.fetch-button {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 30px;
-  //display: flex;
+  display: flex;
   width: 80vw;
-  max-width: 800px;
-  margin: 20px 25%;
+  max-width: 900px;
+  margin: 20px 15%;
   text-align: center;
 
-  //@media(max-width:864px){}
-
+  @media(max-width:1200px){
+    margin: 20px 5px;
+  }
+  
   h3.post-title {
     font-size: 21px;
     text-align: center;
     margin: 0;
+
+    @media(max-width:768px){
+      font-size: 18px;
+    }
   }
 
   p.post-body {
     margin: 15px 0 0;
     line-height: 1.3;
+    text-align: left;
+
+    @media(max-width:768px){
+      font-size: 14px;
+    }
   }
 
   &.post-info {

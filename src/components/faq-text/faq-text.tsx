@@ -1,5 +1,10 @@
 import { Component, ComponentInterface, Host, h } from '@stencil/core';
 
+/**
+ * faq-text component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'faq-text',
   styleUrl: 'faq-text.scss',

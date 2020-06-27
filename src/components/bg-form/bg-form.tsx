@@ -1,5 +1,10 @@
 import { Component, ComponentInterface, getAssetPath, h } from '@stencil/core';
 
+/**
+ * background-faq component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'bg-form',
   styleUrl: 'bg-form.scss',

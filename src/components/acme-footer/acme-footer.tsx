@@ -1,5 +1,10 @@
 import { Component, ComponentInterface, h, Prop } from '@stencil/core';
 
+/**
+ * footer component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'acme-footer',
   styleUrl: 'acme-footer.scss',

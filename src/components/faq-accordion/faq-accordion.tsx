@@ -1,5 +1,10 @@
 import { Component, ComponentInterface, h, State, EventEmitter, Event, Prop } from '@stencil/core';
 
+/**
+ * faq-accordion component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'faq-accordion',
   styleUrl: 'faq-accordion.scss',

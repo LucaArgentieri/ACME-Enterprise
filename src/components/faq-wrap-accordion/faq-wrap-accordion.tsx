@@ -1,5 +1,11 @@
 import { Component, ComponentInterface, Host, h } from '@stencil/core';
 
+/**
+ * faq-wrap accordion component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
+
 @Component({
   tag: 'faq-wrap-accordion',
   styleUrl: 'faq-wrap-accordion.scss',

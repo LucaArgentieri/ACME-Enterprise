@@ -62,7 +62,6 @@ export class AcmeFooter implements ComponentInterface {
             <li>Area clienti</li>
           </ul>
         </div>
-
       </footer>
     );
   }

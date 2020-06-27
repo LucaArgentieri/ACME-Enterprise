@@ -1,15 +1,19 @@
 .footer{ 
   font-family: $font-primary;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
    text-align: center;
    width: 100%;
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
    grid-gap: 5px;
+   //border-top: .5px solid rgb(219, 218, 218, .5);
   
    background-color: #fff;
+
+   
 
    &__section {
     padding-top: 20px;
@@ -54,9 +58,15 @@
       }
     }
    }
-   
+  
+  @media(max-width:768px){
+    //border-top: none;
+    margin-top: 5px; 
+  }
+  
   @media(max-width:900px){
    grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr;
   }
+
 }

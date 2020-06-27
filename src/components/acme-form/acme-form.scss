@@ -42,6 +42,12 @@ form {
   }
 }
 
+@media (max-width: 500px){
+  form {
+    grid-template-columns: 1fr;
+  } 
+}
+
 .full-width {
     grid-column: 1 / -1;
 }
@@ -115,7 +121,7 @@ textarea {
     font-family: $font-primary;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .wrapper {
       grid-template-columns: 1fr ;
       margin-left: 0;
@@ -128,9 +134,4 @@ textarea {
   }
 }
 
-@media(max-width:630px){
-  .wrapper {
-    margin-top: 100px
-  }
-}
 

@@ -17,12 +17,12 @@
 
 ### Used by
 
- - [acme-navbar](../acme-navbar)
+ - [acme-banner](../acme-banner)
 
 ### Graph
 ```mermaid
 graph TD;
-  acme-navbar --> upper-bar
+  acme-banner --> upper-bar
   style upper-bar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

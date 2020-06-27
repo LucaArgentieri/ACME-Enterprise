@@ -18,7 +18,7 @@
 
 | Event      | Description               | Type               |
 | ---------- | ------------------------- | ------------------ |
-| `onToggle` | event of toggle accordion | `CustomEvent<any>` |
+| `myToggle` | event of toggle accordion | `CustomEvent<any>` |
 
 
 ## Dependencies

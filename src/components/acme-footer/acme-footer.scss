@@ -1,7 +1,7 @@
 .footer{ 
   font-family: $font-primary;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
    text-align: center;
    width: 100%;
    display: grid;
@@ -37,7 +37,8 @@
     }
 
     h5 {
-      color: $secondary-color;
+      color: $primary-color;
+      font-size: 18px;
     }
      
     li {

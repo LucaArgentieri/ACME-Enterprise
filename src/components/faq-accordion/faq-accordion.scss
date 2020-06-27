@@ -1,0 +1,44 @@
+.cont {
+  width: 100%; 
+}
+
+.accordion {
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  outline: 0;
+  border: none;
+  background-color: #fff;
+  border-bottom: 1px solid #b9b7b7;
+  
+  transform: translateY(-10px);
+
+  @media(max-width:1000px){
+    margin-top: 25px;
+    text-align: center;
+   }
+}
+
+span {
+  color: $secondary-color;
+  float: right;
+  font-size: 27px;
+}
+
+.open {
+  height: auto;
+  padding: 20px;
+  text-align: left;
+  transition: .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.close {
+  opacity: 0;
+  height: 5px;
+  transition: .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+

@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  justify-content: space-around;
+  margin: 70px 75px;
+  font-family: $font-primary;
+
+  @media(max-width:1000px){
+    flex-direction: column;
+    margin: 5px 25px;
+   }
+}
+

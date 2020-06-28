@@ -6,6 +6,30 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface AcmeBanner {
+        "contacts": string;
+        "phone": string;
+        "products": string;
+        "services": string;
+        "tagline": string;
+        "who": string;
+    }
+    interface AcmeFooter {
+        /**
+          * value of first h5 in the footer
+         */
+        "headFiveOne": string;
+        /**
+          * value of the last h5 in the footer
+         */
+        "headFiveThree": string;
+        /**
+          * value of the second h5 in the footer
+         */
+        "headFiveTwo": string;
+    }
+    interface AcmeForm {
+    }
     interface AcmeHamburger {
     }
     interface AcmeNavbar {
@@ -15,6 +39,38 @@ export namespace Components {
         "services": string;
         "tagline": string;
         "who": string;
+    }
+    interface AcmeNews {
+    }
+    interface AppContainer {
+    }
+    interface BgForm {
+    }
+    interface BodyBox {
+    }
+    interface BodyBox2 {
+    }
+    interface BodyContainer {
+    }
+    interface FaqAccordion {
+        /**
+          * pass the content of faq answer from faq-wrap-acoordion
+         */
+        "answer": string;
+        /**
+          * pass the content of faq question from faq-wrap-acoordion
+         */
+        "question": string;
+        /**
+          * pass the width of faq-accordion
+         */
+        "width": string;
+    }
+    interface FaqText {
+    }
+    interface FaqWrap {
+    }
+    interface FaqWrapAccordion {
     }
     interface HamburgerBody {
         "contacts": string;
@@ -28,12 +84,32 @@ export namespace Components {
         "services": string;
         "who": string;
     }
+    interface TextBox {
+    }
     interface UpperBar {
         "phone": string;
         "tagline": string;
     }
 }
 declare global {
+    interface HTMLAcmeBannerElement extends Components.AcmeBanner, HTMLStencilElement {
+    }
+    var HTMLAcmeBannerElement: {
+        prototype: HTMLAcmeBannerElement;
+        new (): HTMLAcmeBannerElement;
+    };
+    interface HTMLAcmeFooterElement extends Components.AcmeFooter, HTMLStencilElement {
+    }
+    var HTMLAcmeFooterElement: {
+        prototype: HTMLAcmeFooterElement;
+        new (): HTMLAcmeFooterElement;
+    };
+    interface HTMLAcmeFormElement extends Components.AcmeForm, HTMLStencilElement {
+    }
+    var HTMLAcmeFormElement: {
+        prototype: HTMLAcmeFormElement;
+        new (): HTMLAcmeFormElement;
+    };
     interface HTMLAcmeHamburgerElement extends Components.AcmeHamburger, HTMLStencilElement {
     }
     var HTMLAcmeHamburgerElement: {
@@ -46,80 +122,22 @@ declare global {
         prototype: HTMLAcmeNavbarElement;
         new (): HTMLAcmeNavbarElement;
     };
-    interface HTMLHamburgerBodyElement extends Components.HamburgerBody, HTMLStencilElement {
+    interface HTMLAcmeNewsElement extends Components.AcmeNews, HTMLStencilElement {
     }
-    var HTMLHamburgerBodyElement: {
-        prototype: HTMLHamburgerBodyElement;
-        new (): HTMLHamburgerBodyElement;
+    var HTMLAcmeNewsElement: {
+        prototype: HTMLAcmeNewsElement;
+        new (): HTMLAcmeNewsElement;
     };
-    interface HTMLLowerBarElement extends Components.LowerBar, HTMLStencilElement {
+    interface HTMLAppContainerElement extends Components.AppContainer, HTMLStencilElement {
     }
-    var HTMLLowerBarElement: {
-        prototype: HTMLLowerBarElement;
-        new (): HTMLLowerBarElement;
+    var HTMLAppContainerElement: {
+        prototype: HTMLAppContainerElement;
+        new (): HTMLAppContainerElement;
     };
-    interface HTMLUpperBarElement extends Components.UpperBar, HTMLStencilElement {
+    interface HTMLBgFormElement extends Components.BgForm, HTMLStencilElement {
     }
-    var HTMLUpperBarElement: {
-        prototype: HTMLUpperBarElement;
-        new (): HTMLUpperBarElement;
-    };
-    interface HTMLElementTagNameMap {
-        "acme-hamburger": HTMLAcmeHamburgerElement;
-        "acme-navbar": HTMLAcmeNavbarElement;
-        "hamburger-body": HTMLHamburgerBodyElement;
-        "lower-bar": HTMLLowerBarElement;
-        "upper-bar": HTMLUpperBarElement;
-    }
-}
-declare namespace LocalJSX {
-    interface AcmeHamburger {
-    }
-    interface AcmeNavbar {
-        "contacts"?: string;
-        "phone"?: string;
-        "products"?: string;
-        "services"?: string;
-        "tagline"?: string;
-        "who"?: string;
-    }
-    interface HamburgerBody {
-        "contacts"?: string;
-        "products"?: string;
-        "services"?: string;
-        "who"?: string;
-    }
-    interface LowerBar {
-        "contacts"?: string;
-        "products"?: string;
-        "services"?: string;
-        "who"?: string;
-    }
-    interface UpperBar {
-        "phone"?: string;
-        "tagline"?: string;
-    }
-    interface IntrinsicElements {
-        "acme-hamburger": AcmeHamburger;
-        "acme-navbar": AcmeNavbar;
-        "hamburger-body": HamburgerBody;
-        "lower-bar": LowerBar;
-        "upper-bar": UpperBar;
-    }
-}
-export { LocalJSX as JSX };
-declare module "@stencil/core" {
-    export namespace JSX {
-        interface IntrinsicElements {
-            "acme-hamburger": LocalJSX.AcmeHamburger & JSXBase.HTMLAttributes<HTMLAcmeHamburgerElement>;
-            "acme-navbar": LocalJSX.AcmeNavbar & JSXBase.HTMLAttributes<HTMLAcmeNavbarElement>;
-            "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
-            "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
-            "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;
-        }
-    }
-}
-prototype: HTMLBgFormElement;
+    var HTMLBgFormElement: {
+        prototype: HTMLBgFormElement;
         new (): HTMLBgFormElement;
     };
     interface HTMLBodyBoxElement extends Components.BodyBox, HTMLStencilElement {
@@ -176,6 +194,12 @@ prototype: HTMLBgFormElement;
         prototype: HTMLLowerBarElement;
         new (): HTMLLowerBarElement;
     };
+    interface HTMLTextBoxElement extends Components.TextBox, HTMLStencilElement {
+    }
+    var HTMLTextBoxElement: {
+        prototype: HTMLTextBoxElement;
+        new (): HTMLTextBoxElement;
+    };
     interface HTMLUpperBarElement extends Components.UpperBar, HTMLStencilElement {
     }
     var HTMLUpperBarElement: {
@@ -200,6 +224,7 @@ prototype: HTMLBgFormElement;
         "faq-wrap-accordion": HTMLFaqWrapAccordionElement;
         "hamburger-body": HTMLHamburgerBodyElement;
         "lower-bar": HTMLLowerBarElement;
+        "text-box": HTMLTextBoxElement;
         "upper-bar": HTMLUpperBarElement;
     }
 }
@@ -286,6 +311,8 @@ declare namespace LocalJSX {
         "services"?: string;
         "who"?: string;
     }
+    interface TextBox {
+    }
     interface UpperBar {
         "phone"?: string;
         "tagline"?: string;
@@ -308,6 +335,7 @@ declare namespace LocalJSX {
         "faq-wrap-accordion": FaqWrapAccordion;
         "hamburger-body": HamburgerBody;
         "lower-bar": LowerBar;
+        "text-box": TextBox;
         "upper-bar": UpperBar;
     }
 }
@@ -332,6 +360,7 @@ declare module "@stencil/core" {
             "faq-wrap-accordion": LocalJSX.FaqWrapAccordion & JSXBase.HTMLAttributes<HTMLFaqWrapAccordionElement>;
             "hamburger-body": LocalJSX.HamburgerBody & JSXBase.HTMLAttributes<HTMLHamburgerBodyElement>;
             "lower-bar": LocalJSX.LowerBar & JSXBase.HTMLAttributes<HTMLLowerBarElement>;
+            "text-box": LocalJSX.TextBox & JSXBase.HTMLAttributes<HTMLTextBoxElement>;
             "upper-bar": LocalJSX.UpperBar & JSXBase.HTMLAttributes<HTMLUpperBarElement>;
         }
     }

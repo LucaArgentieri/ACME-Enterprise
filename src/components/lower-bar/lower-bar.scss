@@ -5,6 +5,7 @@
   font-size: 20px;
   position: relative;
   background-color: white;
+
 }
 img {
   padding: 10px 0px;
@@ -22,6 +23,10 @@ img {
 a {
   text-decoration: none;
   color: white;
+  transition: 1s;
+}
+a:hover {
+  transform: translateY(-3px);
 }
 acme-hamburger {
   display: none;

@@ -1,8 +1,33 @@
 :host {
   display: none;
 }
-div {
+div.button {
   font-size: 50px;
   color: $secondary-color;
-  cursor: pointer;  
+  cursor: pointer;
+}
+span {
+  display: block;
+  height: 5px;
+  width: 45px;
+  background-color: $secondary-color;
+  border-radius: 20px;
+  transition: 1s;
+}
+.first {
+  margin-bottom: 10px;
+}
+.third {
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+.rotate_1 {
+  transform: rotate(-45deg);
+  margin-bottom: -1px;
+}
+.rotate_2 {
+  transform: rotate(45deg) translateX(-3px) translateY(-2px);
+  margin-top: -1px;
 }

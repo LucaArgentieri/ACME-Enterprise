@@ -29,9 +29,8 @@ h2 {
 
 button.fetch-button {
   position: absolute;
-  //left: 46%;
+  left: 50%;
   width: 100px;
-
   color: white;
   font-family: $font-primary;
   padding: 5px;
@@ -42,10 +41,16 @@ button.fetch-button {
   width: 150px;
   margin-top: 25px;
   outline: none;
+  transform: translateX(-47%);
+  text-align: center;
+
+  
 
   &:hover {
     opacity: .9;
   }
+
+  
 
   /*@media(max-width:375px){
     left:40%;

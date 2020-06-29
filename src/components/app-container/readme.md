@@ -1,5 +1,5 @@
 # app-container
-
+This is the app-container and contains every components of the website
 
 
 <!-- Auto Generated Below -->
@@ -12,6 +12,7 @@
 - [acme-navbar](../acme-navbar)
 - [body-container](../body-container)
 - [faq-wrap](../faq-wrap)
+- [acme-news](../acme-news)
 - [acme-form](../acme-form)
 - [acme-footer](../acme-footer)
 
@@ -21,11 +22,12 @@ graph TD;
   app-container --> acme-navbar
   app-container --> body-container
   app-container --> faq-wrap
+  app-container --> acme-news
   app-container --> acme-form
   app-container --> acme-footer
-  acme-navbar --> upper-bar
-  acme-navbar --> lower-bar
   acme-navbar --> acme-banner
+  acme-banner --> upper-bar
+  acme-banner --> lower-bar
   lower-bar --> acme-hamburger
   lower-bar --> hamburger-body
   body-container --> text-box

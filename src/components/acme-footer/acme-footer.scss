@@ -2,12 +2,14 @@
   font-family: $font-primary;
   margin-top: 50px;
   margin-bottom: 50px;
+  padding-top: 50px;
    text-align: center;
    width: 100%;
    display: grid;
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
    grid-gap: 5px;
+   //border-top: .5px solid rgb(219, 218, 218, .5);
   
    background-color: #fff;
 
@@ -37,12 +39,14 @@
     }
 
     h5 {
-      color: $secondary-color;
+      color: $primary-color;
+      font-size: 18px;
     }
      
     li {
       cursor: pointer;
-      font-size: 13px;
+      padding-top: 5px;
+      font-size: 14px;
       list-style: none;
       transition: all .4s;
 
@@ -53,9 +57,15 @@
       }
     }
    }
-   
+  
+  @media(max-width:768px){
+    //border-top: none;
+    margin-top: 5px; 
+  }
+  
   @media(max-width:900px){
    grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr;
   }
+
 }

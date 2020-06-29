@@ -1,5 +1,6 @@
 # faq-wrap-accordion
-
+component whit the text of accordion.
+Incapsulated in faq-wrap.
 
 
 <!-- Auto Generated Below -->

@@ -1,5 +1,10 @@
 import { Component, ComponentInterface, h, getAssetPath } from '@stencil/core';
 
+/**
+ * form component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'acme-form',
   styleUrl: 'acme-form.scss',

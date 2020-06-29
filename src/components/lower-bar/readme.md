@@ -19,7 +19,7 @@
 
 ### Used by
 
- - [acme-navbar](../acme-navbar)
+ - [acme-banner](../acme-banner)
 
 ### Depends on
 
@@ -31,7 +31,7 @@
 graph TD;
   lower-bar --> acme-hamburger
   lower-bar --> hamburger-body
-  acme-navbar --> lower-bar
+  acme-banner --> lower-bar
   style lower-bar fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

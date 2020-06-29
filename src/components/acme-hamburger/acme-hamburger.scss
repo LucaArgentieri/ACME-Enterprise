@@ -6,3 +6,28 @@ div {
   color: $secondary-color;
   cursor: pointer;  
 }
+span {
+  background-color: $secondary-color;
+  display: block;
+  height: 5px;
+  width: 45px;
+  border-radius: 20px;
+  transition: 1s;
+}
+.first {
+  margin-bottom: 10px;
+}
+.third {
+  margin-top: 10px;
+}
+.hidden {
+  display: none;
+}
+.rotate_1 {
+  transform: rotate(-45deg);
+  margin-bottom: -1px;
+}
+.rotate_2 {
+  transform: rotate(45deg) translateX(-4px) translateY(-2px);
+  margin-top: -1px;
+}

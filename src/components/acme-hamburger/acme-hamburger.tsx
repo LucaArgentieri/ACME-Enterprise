@@ -18,17 +18,25 @@ export class AcmeHamburger implements ComponentInterface {
   // eslint-disable-next-line @stencil/prefer-vdom-listener
   @Listen('click')
      showMenu(ev) {
-    if (this.button.innerHTML === '☰') {
-      this.button.innerHTML = '✕';
+    if (!this.menu.classList.contains('visible')) {
       this.menu.classList.add('visible');
+      this.button.children[1].classList.add('hidden');
+      this.button.children[0].classList.add('rotate_1');
+      this.button.children[2].classList.add('rotate_2');
       console.log(ev);
     } else {
-      this.button.innerHTML = '☰';
       this.menu.classList.remove('visible');
+      this.button.children[1].classList.remove('hidden');
+      this.button.children[0].classList.remove('rotate_1');
+      this.button.children[2].classList.remove('rotate_2');
     }
   }
   render() {
-    return <div class="button">☰</div>
+    return <div class="button">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </div>
   }
 
 }

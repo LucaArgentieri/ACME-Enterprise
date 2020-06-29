@@ -1,5 +1,7 @@
 # body-box
-
+This is the first body-box with 2 areas:
+-1) Business Banner (It has a CTA for Business page)
+-2) Cards (represent 3 main services for the companies)
 
 
 <!-- Auto Generated Below -->

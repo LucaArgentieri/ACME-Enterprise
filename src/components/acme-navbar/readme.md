@@ -25,16 +25,14 @@
 
 ### Depends on
 
-- [upper-bar](../upper-bar)
-- [lower-bar](../lower-bar)
 - [acme-banner](../acme-banner)
 
 ### Graph
 ```mermaid
 graph TD;
-  acme-navbar --> upper-bar
-  acme-navbar --> lower-bar
   acme-navbar --> acme-banner
+  acme-banner --> upper-bar
+  acme-banner --> lower-bar
   lower-bar --> acme-hamburger
   lower-bar --> hamburger-body
   app-container --> acme-navbar

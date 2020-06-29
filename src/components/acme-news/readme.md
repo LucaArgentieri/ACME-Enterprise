@@ -1,9 +1,6 @@
-# acme-form
-Form with css auto-validation.
-This componend is divided in 2 parts:
--left: background image
--right: form input and send button
-
+# acme-news
+component that performs fetch request
+and uploads the answers in the respective boxes
 
 
 <!-- Auto Generated Below -->
@@ -18,8 +15,8 @@ This componend is divided in 2 parts:
 ### Graph
 ```mermaid
 graph TD;
-  app-container --> acme-form
-  style acme-form fill:#f9f,stroke:#333,stroke-width:4px
+  app-container --> acme-news
+  style acme-news fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

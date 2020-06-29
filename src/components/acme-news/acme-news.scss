@@ -1,7 +1,6 @@
 
 :host {
   padding-bottom: 150px; 
-
 }
 
 .news-container {
@@ -30,24 +29,30 @@ h2 {
 
 button.fetch-button {
   position: absolute;
-  left: 46%;
+  left: 50%;
   width: 100px;
-
   color: white;
   font-family: $font-primary;
-  padding: 5px;
+  padding: 10px 5px;
   font-size: 16px;
   cursor: pointer;
   background: $primary-color;
   border-radius: 20px;
   width: 150px;
   margin-top: 25px;
+  outline: none;
+  transform: translateX(-46%);
+  text-align: center;
+
+  
 
   &:hover {
     opacity: .9;
   }
 
-  @media(max-width:375px){
+  
+
+  /*@media(max-width:375px){
     left:40%;
   }
 
@@ -57,7 +62,7 @@ button.fetch-button {
 
   @media(max-width:414px){
     left:32%;
-  }
+  }*/
 }
 
 .post {
@@ -80,7 +85,7 @@ button.fetch-button {
   
   h3.post-title {
     font-size: 21px;
-    text-align: center;
+    text-align: left;
     margin: 0;
 
     @media(max-width:768px){

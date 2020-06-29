@@ -3,9 +3,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: $primary-color;
-  margin:150px 75px;
-  font-family: $font-primary;
-  
+  margin:150px 75px 100px 75px;
+  font-family: $font-primary; 
+}
+
+@media (max-width: 500px){
+  .wrapper {
+    margin:150px 75px 50px 75px;
+  } 
 }
 
 .wrapper>* {
@@ -124,9 +129,7 @@ textarea {
 @media (max-width: 1000px) {
   .wrapper {
       grid-template-columns: 1fr ;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 100px;
+      margin: 100px 0 5px 0;
   }
 
   .img_background {

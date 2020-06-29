@@ -1,5 +1,10 @@
 import { Component, ComponentInterface, h } from '@stencil/core';
 
+/**
+ * faq-wrap component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'faq-wrap',
   styleUrl: 'faq-wrap.scss',

@@ -1,6 +1,11 @@
 import { Component, ComponentInterface, Host, h, State } from '@stencil/core';
 import { News } from './news-interface';
 
+/**
+ * news component
+ * @author Anrea Guffi
+ * @version 1.0.0
+ */
 @Component({
   tag: 'acme-news',
   styleUrl: 'acme-news.scss',
@@ -11,12 +16,16 @@ export class AcmeNews implements ComponentInterface {
   @State() limit = 3;
   @State() page = 1;
 
+  /**
+   * fecth 3 element when page is ulpload
+   */
   componentDidLoad() {
     this.fetchData();
   }
 
+
   private fetchData = () => {
-    if (this.limit >= 15) {
+    if (this.limit >= 18) {
       return;
     }
     fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${this.limit}&_page=${this.page}`)

@@ -1,5 +1,6 @@
 # faq-wrap
-
+wrapper of faq-text and faq-wrap-accordion element.
+this component is incapsulated in app-container
 
 
 <!-- Auto Generated Below -->

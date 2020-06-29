@@ -1,4 +1,6 @@
 # faq-text
+Simple title and text on the left of accordion.
+This component is incapsulated in faq-wrap
 
 
 

@@ -1,4 +1,5 @@
 # upper-bar
+This component contains search, telephone and login.
 
 
 
@@ -9,8 +10,8 @@
 
 | Property  | Attribute | Description | Type     | Default     |
 | --------- | --------- | ----------- | -------- | ----------- |
-| `phone`   | `phone`   |             | `string` | `undefined` |
-| `tagline` | `tagline` |             | `string` | `undefined` |
+| `phone`   | `phone`   | Instant call for customer care       | `string` | `undefined` |
+| `tagline` | `tagline` | Welcome in ACME                      | `string` | `undefined` |
 
 
 ## Dependencies

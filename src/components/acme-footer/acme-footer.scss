@@ -9,7 +9,7 @@
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
    grid-gap: 5px;
-   border-top: .5px solid $secondary-color;
+   border-top: .5px solid rgba(18, 166, 230, 0.5);
   
    background-color: #fff;
 
@@ -58,20 +58,24 @@
     }
    }
   
-  @media(max-width:768px){
-    //border-top: none;
-    margin-top: 5px; 
+   @media(max-width:1000px){
+    margin-top: 5px;
+    border-top: none;
   }
-  
+
   @media(max-width:900px){
    grid-template-rows: 1fr 1fr;
    grid-template-columns: 1fr 1fr;
   }
 
+  @media(max-width:768px){
+    margin-top: 5px; 
+  }
+
 }
 
 .footer__bottom{
-  border-top: .5px solid $secondary-color;
+  border-top: .5px solid rgba(18, 166, 230, 0.5);
   text-align: left;
   margin-left: 75px;
   margin-right: 75px;

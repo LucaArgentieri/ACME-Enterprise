@@ -1,4 +1,8 @@
 # acme-form
+Form with css auto-validation.
+This componend is divided in 2 parts:
+-left: background image
+-right: form input and send button
 
 
 

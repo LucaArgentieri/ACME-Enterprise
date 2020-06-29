@@ -1,4 +1,5 @@
 # faq-accordion
+simple accordion for Faq section
 
 
 

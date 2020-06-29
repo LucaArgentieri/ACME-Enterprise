@@ -1,5 +1,6 @@
 # acme-news
-
+component that performs fetch request
+and uploads the answers in the respective boxes
 
 
 <!-- Auto Generated Below -->

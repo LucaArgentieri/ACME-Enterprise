@@ -1,7 +1,7 @@
 .footer{ 
   font-family: $font-primary;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 45px;
   padding-top: 50px;
    text-align: center;
    width: 100%;
@@ -9,7 +9,7 @@
    grid-template-rows: 1fr;
    grid-template-columns: 1fr 1fr 1fr 1fr ;
    grid-gap: 5px;
-   //border-top: .5px solid rgb(219, 218, 218, .5);
+   border-top: .5px solid $secondary-color;
   
    background-color: #fff;
 
@@ -68,4 +68,19 @@
    grid-template-columns: 1fr 1fr;
   }
 
+}
+
+.footer__bottom{
+  border-top: .5px solid $secondary-color;
+  text-align: left;
+  margin-left: 75px;
+  margin-right: 75px;
+  //margin-top: 30px;
+  font-family: $font-primary;
+  font-size: 12px;
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }

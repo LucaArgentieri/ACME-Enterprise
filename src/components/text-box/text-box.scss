@@ -56,6 +56,14 @@ a {
 }
 
 @media(max-width:900px){
+  h2.title {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .para-box p {
+    margin-left: 50px;
+    margin-right: 50px; 
+  }
   .left-box {
     margin-left: 0px;
     width: auto;
@@ -69,6 +77,14 @@ a {
 }
 
 @media(max-width:630px) {
+  h2.title {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .para-box p {
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
   .box_container {
     margin-left: 20px;
     margin-right: 20px;

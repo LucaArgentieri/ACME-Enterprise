@@ -19,10 +19,22 @@ img {
   justify-content: space-evenly;
   align-items: center;
 }
-a {
+.lower_links a {
   text-decoration: none;
   color: white;
+  transition: 1s;
+  position: relative;
+  background-image: linear-gradient(white, white);
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all .2s ease-out;
 }
+
+a:hover {
+  background-size: 100% 2px, auto;
+}
+
 acme-hamburger {
   display: none;
   z-index: 3;

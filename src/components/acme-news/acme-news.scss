@@ -1,7 +1,6 @@
 
 :host {
   padding-bottom: 150px; 
-
 }
 
 .news-container {
@@ -30,7 +29,7 @@ h2 {
 
 button.fetch-button {
   position: absolute;
-  left: 46%;
+  //left: 46%;
   width: 100px;
 
   color: white;
@@ -48,7 +47,7 @@ button.fetch-button {
     opacity: .9;
   }
 
-  @media(max-width:375px){
+  /*@media(max-width:375px){
     left:40%;
   }
 
@@ -58,7 +57,7 @@ button.fetch-button {
 
   @media(max-width:414px){
     left:32%;
-  }
+  }*/
 }
 
 .post {

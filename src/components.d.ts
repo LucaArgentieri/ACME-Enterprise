@@ -7,11 +7,29 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AcmeBanner {
+        /**
+          * add a text to the link for the contacts page taking it from acme-navbar component
+         */
         "contacts": string;
+        /**
+          * add a phone number taking it from acme-navbar component
+         */
         "phone": string;
+        /**
+          * add a text to the link for the product page taking it from acme-navbar component
+         */
         "products": string;
+        /**
+          * add a text to the link for the services page taking it from acme-navbar component
+         */
         "services": string;
+        /**
+          * add a welcome message taking it from acme-navbar component
+         */
         "tagline": string;
+        /**
+          * add a text to the link for the about page taking it from acme-navbar component
+         */
         "who": string;
     }
     interface AcmeFooter {
@@ -33,11 +51,29 @@ export namespace Components {
     interface AcmeHamburger {
     }
     interface AcmeNavbar {
+        /**
+          * add text for the link to the contact page  and pass it to other components
+         */
         "contacts": string;
+        /**
+          * add phone number and pass it to other components
+         */
         "phone": string;
+        /**
+          * add text for the link to the product page  and pass it to other components
+         */
         "products": string;
+        /**
+          * add text for the link to the services page  and pass it to other components
+         */
         "services": string;
+        /**
+          * add a welcome message and pass it to other components
+         */
         "tagline": string;
+        /**
+          * add text for the link to the about page  and pass it to other components
+         */
         "who": string;
     }
     interface AcmeNews {
@@ -230,11 +266,29 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AcmeBanner {
+        /**
+          * add a text to the link for the contacts page taking it from acme-navbar component
+         */
         "contacts"?: string;
+        /**
+          * add a phone number taking it from acme-navbar component
+         */
         "phone"?: string;
+        /**
+          * add a text to the link for the product page taking it from acme-navbar component
+         */
         "products"?: string;
+        /**
+          * add a text to the link for the services page taking it from acme-navbar component
+         */
         "services"?: string;
+        /**
+          * add a welcome message taking it from acme-navbar component
+         */
         "tagline"?: string;
+        /**
+          * add a text to the link for the about page taking it from acme-navbar component
+         */
         "who"?: string;
     }
     interface AcmeFooter {
@@ -256,11 +310,29 @@ declare namespace LocalJSX {
     interface AcmeHamburger {
     }
     interface AcmeNavbar {
+        /**
+          * add text for the link to the contact page  and pass it to other components
+         */
         "contacts"?: string;
+        /**
+          * add phone number and pass it to other components
+         */
         "phone"?: string;
+        /**
+          * add text for the link to the product page  and pass it to other components
+         */
         "products"?: string;
+        /**
+          * add text for the link to the services page  and pass it to other components
+         */
         "services"?: string;
+        /**
+          * add a welcome message and pass it to other components
+         */
         "tagline"?: string;
+        /**
+          * add text for the link to the about page  and pass it to other components
+         */
         "who"?: string;
     }
     interface AcmeNews {

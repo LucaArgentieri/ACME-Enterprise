@@ -7,8 +7,9 @@ import { Component, ComponentInterface, h, Prop } from '@stencil/core';
   assetsDirs: ["/assets"],
 })
 export class UpperBar implements ComponentInterface {
-
+  /** take the welcome message from acme-banner and add it to the component */
   @Prop() tagline: string;
+  /** take the phone number from acme-banner and add it to the component */
   @Prop() phone: string;
 
   render() {

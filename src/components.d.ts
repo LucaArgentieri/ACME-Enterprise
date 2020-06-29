@@ -115,15 +115,33 @@ export namespace Components {
         "who": string;
     }
     interface LowerBar {
+        /**
+          * take the text for the link to the contacts page from acme-banner and add it to the component
+         */
         "contacts": string;
+        /**
+          * take the text for the link to the product page from acme-banner and add it to the component
+         */
         "products": string;
+        /**
+          * take the text for the link to the services page from acme-banner and add it to the component
+         */
         "services": string;
+        /**
+          * take the text for the link to the about page from acme-banner and add it to the component
+         */
         "who": string;
     }
     interface TextBox {
     }
     interface UpperBar {
+        /**
+          * take the phone number from acme-banner and add it to the component
+         */
         "phone": string;
+        /**
+          * take the welcome message from acme-banner and add it to the component
+         */
         "tagline": string;
     }
 }
@@ -378,15 +396,33 @@ declare namespace LocalJSX {
         "who"?: string;
     }
     interface LowerBar {
+        /**
+          * take the text for the link to the contacts page from acme-banner and add it to the component
+         */
         "contacts"?: string;
+        /**
+          * take the text for the link to the product page from acme-banner and add it to the component
+         */
         "products"?: string;
+        /**
+          * take the text for the link to the services page from acme-banner and add it to the component
+         */
         "services"?: string;
+        /**
+          * take the text for the link to the about page from acme-banner and add it to the component
+         */
         "who"?: string;
     }
     interface TextBox {
     }
     interface UpperBar {
+        /**
+          * take the phone number from acme-banner and add it to the component
+         */
         "phone"?: string;
+        /**
+          * take the welcome message from acme-banner and add it to the component
+         */
         "tagline"?: string;
     }
     interface IntrinsicElements {

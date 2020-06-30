@@ -29,8 +29,10 @@ export class AcmeNews implements ComponentInterface {
       return;
     }
     fetch(`https://jsonplaceholder.typicode.com/posts?_limit=${this.limit}&_page=${this.page}`)
+      //fetch(`https://fg-acme-server.herokuapp.com`)
       .then(response => response.json())
       .then((json) => (this.news = json))
+    //.then(json => { this.news = json.splice((element, i) => i < 6) })
     this.limit += 3;
     //this.page++;
   };

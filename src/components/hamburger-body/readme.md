@@ -1,5 +1,5 @@
 # hamburger-body
-
+This component contains contacts,products,services and who for hamurger menu
 
 
 <!-- Auto Generated Below -->
@@ -9,10 +9,10 @@
 
 | Property   | Attribute  | Description | Type     | Default     |
 | ---------- | ---------- | ----------- | -------- | ----------- |
-| `contacts` | `contacts` |             | `string` | `undefined` |
-| `products` | `products` |             | `string` | `undefined` |
-| `services` | `services` |             | `string` | `undefined` |
-| `who`      | `who`      |             | `string` | `undefined` |
+| `contacts` | `contacts` | Link for contacts form, email and telephone | `string` | `undefined` |
+| `products` | `products` | Link for ACME financial products            | `string` | `undefined` |
+| `services` | `services` | Link for private and companies services     | `string` | `undefined` |
+| `who`      | `who`      | Link to about us                            | `string` | `undefined` |
 
 
 ## Dependencies

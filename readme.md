@@ -19,6 +19,15 @@ Occorrerà mettere enfasi, per esempio con sezioni apposite, sul core business d
 Dovrà essere presente una sezione relativa alle news in cui mostrare una lista, stilizzata a piacere seguendo le linee guida globali, di notizie. Queste notizie sono recuperate attraverso l'utilizzo di fetch API interrogando l'indirizzo: https://jsonplaceholder.typicode.com/posts
 tale indirizzo restituirà un array di oggetti con cui popolare i componenti rappresentanti gli articoli.
 
+In alternativa è possibile utilizzare l'endpoint:
+https://fg-acme-server.herokuapp.com/
+La risposta è un array di oggetti json con la seguente struttura:
+{
+    "title": "titolo 1",
+    "description": "descrizione 1",
+    "date": "dd/mm/yyyy"
+  }
+
 ## Mockup
 
 - [Figma Project](https://www.figma.com/file/TJ8inXUCPNhiYrBLtg6kNu/ACME_STENCIL?node-id=0%3A1

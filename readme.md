@@ -16,6 +16,9 @@ Occorrerà utilizzare le regole di stile definite nel file styles e utilizzare t
 
 Occorrerà mettere enfasi, per esempio con sezioni apposite, sul core business della società (servizi finanziari e assicurativi) e sulla clientela a cui fa riferimento (aziende e privati). Queste risultano infatti le sezioni più importanti della landing page.
 
+Dovrà essere presente una sezione relativa alle news in cui mostrare una lista, stilizzata a piacere seguendo le linee guida globali, di notizie. Queste notizie sono recuperate attraverso l'utilizzo di fetch API interrogando l'indirizzo: https://jsonplaceholder.typicode.com/posts
+tale indirizzo restituirà un array di oggetti con cui popolare i componenti rappresentanti gli articoli.
+
 ## Mockup
 
 - [Figma Project](https://www.figma.com/file/TJ8inXUCPNhiYrBLtg6kNu/ACME_STENCIL?node-id=0%3A1

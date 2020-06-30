@@ -31,7 +31,7 @@ export class BodyBox implements ComponentInterface {
           <div class="card card2">
             <div class="card_img"><span class="img_sfondo2"><img src="assets/iconfinder_work-business-solid-performance-2_5972610.svg" alt="" /></span></div>
             <h3>Analisi dati</h3>
-            <p>Ottieni un finanziamento a medio/lungo termine per far fronte alla liquidità o per realizzare piccoli o grandi progetti.</p>
+            <p>Ottieni insight più approfonditi sulle decisioni dei clienti e sulle operazioni organizzative con una base di dati ibridi, potenziati dall'AI.</p>
             <div class="container_card_button">
               <button class="card_button">Scopri di più</button>
             </div>

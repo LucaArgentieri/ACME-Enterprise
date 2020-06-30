@@ -22,7 +22,7 @@ export class BodyBox2 implements ComponentInterface {
                 <div class="card_img"><span class="img_sfondo1"><img src="assets/ecommerce_money.svg" alt=""/></span></div>
                 <h3>Mutui</h3>
                 <div class="container_p_button">
-                  <p>Ottieni un finanziamento a medio/lungo termine per far fronte alla liquidità o per realizzare piccoli o grandi progetti.</p>
+                  <p>Con ACME scegli tutto tu, dalla tipologia di tasso alle opzioni di flessibilità.</p>
                   <div class="container_card_button">
                   <button class="card_button">Scopri di più</button>
                 </div>
@@ -31,7 +31,8 @@ export class BodyBox2 implements ComponentInterface {
               <div class="card card2">
                 <div class="card_img"><span class="img_sfondo2"><img src="assets/iconfinder_umbrella_430125.svg" alt=""/></span></div>
                 <h3>Assicurazioni</h3>
-                <p>Ottieni un finanziamento a medio/lungo termine per far fronte alla liquidità o per realizzare piccoli o grandi progetti.</p>
+                <p>Calcola il tuo preventivo in soli due click
+Scopri come risparmiare sull'assicurazione auto e blocca l'offerta per 60 giorni.</p>
                 <div class="container_card_button">
                   <button class="card_button">Scopri di più</button>
                 </div>
@@ -39,7 +40,8 @@ export class BodyBox2 implements ComponentInterface {
               <div class="card card3">
                 <div class="card_img"><span class="img_sfondo3"><img src="assets/ecommerce_creditcard.png" alt=""/></span></div>
                 <h3>Carte di credito</h3>
-                <p>Richiedi una consulenza da parte dei nostri esperti per poter migliorare il rendimento della tua azienda.</p>
+                <p>Rendi le tue spese quotidiane più rapide, facili e sicure
+Paga online o in negozio e preleva contanti presso milioni di Bancomat in tutto il mondo.</p>
                 <div class="container_card_button">
                   <button class="card_button">Scopri di più</button>
                 </div>

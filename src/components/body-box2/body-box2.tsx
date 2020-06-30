@@ -39,7 +39,7 @@ export class BodyBox2 implements ComponentInterface {
               <div class="card card3">
                 <div class="card_img"><span class="img_sfondo3"><img src="assets/ecommerce_creditcard.png" alt=""/></span></div>
                 <h3>Carte di credito</h3>
-                <p>Richiedi una consulenza da parte dei nostri esperti per poter migliorare il rendimento della tua azienda</p>
+                <p>Richiedi una consulenza da parte dei nostri esperti per poter migliorare il rendimento della tua azienda.</p>
                 <div class="container_card_button">
                   <button class="card_button">Scopri di più</button>
                 </div>

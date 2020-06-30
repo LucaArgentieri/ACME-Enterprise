@@ -39,7 +39,7 @@ export class BodyBox implements ComponentInterface {
           <div class="card card3">
             <div class="card_img"><span class="img_sfondo3"><img src="assets/presentation.svg" alt="" /></span></div>
             <h3>Consulenze</h3>
-            <p>Richiedi una consulenza da parte dei nostri esperti per poter migliorare il rendimento della tua azienda</p>
+            <p>Richiedi una consulenza da parte dei nostri esperti per poter migliorare il rendimento della tua azienda.</p>
             <div class="container_card_button">
               <button class="card_button">Scopri di più</button>
             </div>

@@ -20,19 +20,19 @@ export class TextBox implements ComponentInterface {
         <div class="right-box">
           <div class="info_box">
             <a href=""><h3 class="title-azz">Servizi finanziari</h3></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, provident.</p>
+            <p>Offriamo un'ampia gamma di soluzioni d'investimento fondate sulle nostre competenze chiave.</p>
           </div>
           <div class="info_box">
             <a href=""><h3 class="title-azz">Servizi assicurativi</h3></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, provident.</p>
+            <p>Scopri le offerte dei nostri Servizi Assicurativi sulle polizze assicurative. Il tuo futuro in mani fidate!</p>
           </div>
           <div class="info_box">
             <a href=""><h3 class="title-azz">Analisi Business</h3></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, provident.</p>
+            <p>L'analisi di mercato è una delle attività centrali quando si scrive un business plan.</p>
           </div>
           <div class="info_box">
             <a href=""><h3 class="title-azz">Assistenza 24/7</h3></a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, provident.</p>
+            <p> La nostra 24/7 Service Hotline vi mette in contatto con il personale di assistenza ACME esperto e altamente qualificato,</p>
           </div>
         </div>
       </div>

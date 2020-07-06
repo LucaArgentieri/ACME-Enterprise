@@ -109,9 +109,21 @@ export namespace Components {
     interface FaqWrapAccordion {
     }
     interface HamburgerBody {
+        /**
+          * take the text for the link to the contacts page from acme-banner and add it to the component
+         */
         "contacts": string;
+        /**
+          * take the text for the link to the product page from acme-banner and add it to the component
+         */
         "products": string;
+        /**
+          * take the text for the link to the services page from acme-banner and add it to the component
+         */
         "services": string;
+        /**
+          * take the text for the link to the about page from acme-banner and add it to the component
+         */
         "who": string;
     }
     interface LowerBar {
@@ -390,9 +402,21 @@ declare namespace LocalJSX {
     interface FaqWrapAccordion {
     }
     interface HamburgerBody {
+        /**
+          * take the text for the link to the contacts page from acme-banner and add it to the component
+         */
         "contacts"?: string;
+        /**
+          * take the text for the link to the product page from acme-banner and add it to the component
+         */
         "products"?: string;
+        /**
+          * take the text for the link to the services page from acme-banner and add it to the component
+         */
         "services"?: string;
+        /**
+          * take the text for the link to the about page from acme-banner and add it to the component
+         */
         "who"?: string;
     }
     interface LowerBar {
@@ -400,6 +424,10 @@ declare namespace LocalJSX {
           * take the text for the link to the contacts page from acme-banner and add it to the component
          */
         "contacts"?: string;
+        /**
+          * shows the menu by clicking on the hamburger
+         */
+        "onMyToggle"?: (event: CustomEvent<any>) => void;
         /**
           * take the text for the link to the product page from acme-banner and add it to the component
          */

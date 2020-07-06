@@ -7,10 +7,14 @@ import { Component, ComponentInterface, h, Prop } from '@stencil/core';
 })
 export class HamburgerBody implements ComponentInterface {
 
-  @Prop() who: string;
-  @Prop() products: string;
-  @Prop() contacts: string;
-  @Prop() services: string;
+   /** take the text for the link to the about page from acme-banner and add it to the component */
+   @Prop() who: string;
+   /** take the text for the link to the product page from acme-banner and add it to the component */
+   @Prop() products: string;
+   /** take the text for the link to the contacts page from acme-banner and add it to the component */
+   @Prop() contacts: string;
+   /** take the text for the link to the services page from acme-banner and add it to the component */
+   @Prop() services: string;
 
   render() {
     return  <div>

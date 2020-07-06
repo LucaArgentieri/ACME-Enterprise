@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, State, EventEmitter, Event, Prop } fr
 
 /**
  * faq-accordion component
- * @author Anrea Guffi
+ * @author Andrea Guffi
  * @version 1.0.0
  */
 @Component({

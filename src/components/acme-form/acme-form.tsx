@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, getAssetPath } from '@stencil/core';
 
 /**
  * form component
- * @author Anrea Guffi
+ * @author Andrea Guffi
  * @version 1.0.0
  */
 @Component({

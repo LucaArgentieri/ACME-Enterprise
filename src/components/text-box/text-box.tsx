@@ -14,7 +14,7 @@ export class TextBox implements ComponentInterface {
           <h2 class="title">Noi siamo <span class="title-azz">Acme</span></h2>
           <h2 class="title">La tua completa soluzione finanziaria</h2>
           <div class="para-box">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum quisquam aliquam quia ex! Quo id dolor animi delectus beatae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla non commodi, modi odio laudantium delectus sapiente qui quia consequatur pariatur recusandae autem aspernatur iusto consectetur, provident, possimus ex. Voluptatibus magni quaerat culpa officia minus nam laudantium iure iste quisquam harum.</p>
+            <p>La finanza digitale veloce, flessibile, accessibile, a supporto delle imprese. Finanziamenti digitali su misura che semplificano l’accesso al credito e la gestione della liquidità aziendale. Meno burocrazia, più opportunità.</p>
           </div>
         </div>
         <div class="right-box">

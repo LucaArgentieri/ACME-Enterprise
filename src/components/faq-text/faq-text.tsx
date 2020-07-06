@@ -2,7 +2,7 @@ import { Component, ComponentInterface, Host, h } from '@stencil/core';
 
 /**
  * faq-text component
- * @author Anrea Guffi
+ * @author Andrea Guffi
  * @version 1.0.0
  */
 @Component({

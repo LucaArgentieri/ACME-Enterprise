@@ -3,7 +3,7 @@ import { News } from './news-interface';
 
 /**
  * news component
- * @author Anrea Guffi
+ * @author Andrea Guffi
  * @version 1.0.0
  */
 @Component({
@@ -17,7 +17,7 @@ export class AcmeNews implements ComponentInterface {
   @State() page = 1;
 
   /**
-   * fecth 3 element when page is ulpload
+   * fecth 3 element when page is uploaded
    */
   componentDidLoad() {
     this.fetchData();
@@ -32,7 +32,6 @@ export class AcmeNews implements ComponentInterface {
       .then(response => response.json())
       .then((json) => (this.news = json))
     this.limit += 3;
-    //this.page++;
   };
 
   render() {

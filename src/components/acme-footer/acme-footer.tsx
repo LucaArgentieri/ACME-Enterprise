@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, Prop, Host } from '@stencil/core';
 
 /**
  * footer component
- * @author Anrea Guffi
+ * @author Andrea Guffi
  * @version 1.0.0
  */
 @Component({

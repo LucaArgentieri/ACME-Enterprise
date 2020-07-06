@@ -2,7 +2,7 @@ import { Component, ComponentInterface, getAssetPath, h } from '@stencil/core';
 
 /**
  * background-faq component
- * @author Anrea Guffi
+ * @author Andrea Guffi
  * @version 1.0.0
  */
 @Component({

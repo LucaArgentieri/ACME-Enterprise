@@ -17,7 +17,7 @@ export class FaqText implements ComponentInterface {
       <Host>
         <h3>Hai bisogno di aiuto?</h3>
         <p>Una selezione delle principali risposte alle domande più frequenti
-        per la tua assicurazione viaggio, assistenza veicoli e altri prodotti
+        per la tua assicurazione viaggio, assistenza veicoli e altri prodotti.
         </p>
       </Host>
     );

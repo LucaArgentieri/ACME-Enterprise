@@ -15,6 +15,11 @@ This component contains about us, products services,contacts.
 | `services` | `services` | Link for private and companies services     | `string` | `undefined` |
 | `who`      | `who`      | Link to about us                            | `string` | `undefined` |
 
+## Events
+
+| Event      | Description               | Type               |
+| ---------- | ------------------------- | ------------------ |
+| `myToggle` | open/close the hamburgermenu | `CustomEvent<any>` |
 
 ## Dependencies
 
